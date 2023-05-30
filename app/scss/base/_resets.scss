@@ -1,0 +1,59 @@
+
+// @import "/app/scss/base/globals"
+html{
+    font-size: 100%;
+    box-sizing: border-box;
+}
+/* 1. Use a more-intuitive box-sizing model. */
+*,*::before, *::after{
+    box-sizing: inherit;
+}
+/* 2. Remove default margin/padding */
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* 3. Allow perccentage based height */
+  html,body{
+    height: 100%;
+  }
+  /* 4. Improve media defaults */
+  img, picture, svg{
+    display: block;
+    max-width: 100%;
+  }
+  
+  /* 5. Avoid text overflows */
+  p,h1,h2, h3, h4,h5,h6{
+    overflow-wrap: break-word;
+  }
+
+  /*
+  Typographic tweaks!
+  6. Add accessible line-height and Improve text rendering
+  */
+  body {
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+    // font-family: 'Roboto', sans-serif;
+    // background-color: $gray-main;
+    }
+    
+    /* 7. Remove built-in form typography styles */
+    
+     button {
+      font: inherit;
+    }
+    
+    h1,h2{
+    
+    }
+    
+    ul{
+      list-style: none;
+    }
+    a{
+      text-decoration: none;
+    }
+  
