@@ -10,8 +10,59 @@
 </head>
 <body>
 
-    <h1>Hello SASS</h1>
-    <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor commodi exercitationem doloribus aliquid aperiam fuga voluptas maxime, repellendus distinctio minima quo eligendi veniam! Quis, facere nihil odio sapiente quaerat, doloremque eius culpa dolore dicta perspiciatis voluptates cumque repellendus aspernatur delectus commodi rem. Doloribus, voluptatum. Reiciendis, atque tempore libero reprehenderit quaerat dolore recusandae at esse rem eos sequi unde impedit odit aliquid perspiciatis ullam, natus pariatur? Veniam corrupti, mollitia magnam incidunt deleniti harum voluptatibus odit, obcaecati consequatur distinctio quas exercitationem quis eveniet minus autem facere omnis. Illum assumenda molestias asperiores fugit. Ullam excepturi et atque magnam facere aliquam hic exercitationem sint.</P>
-    
+    <header class="header">
+        <div class="container">
+        <div class="header__nav-wrapper">
+        <a href="#" class="header__logo">
+                <img src="/images/logo.svg" alt="brand logo">
+                <!-- <span>Rutole</span> -->
+        </a>
+        <button class="nav-toggle hamburger" aria-controls="open-navigation" aria-expanded="false">
+            <!-- <span class="visually-hidden">Menu</span> -->
+            <span class="bar" aria-hidden="true"></span>
+            <span class="bar" aria-hidden="true"></span>
+            <span class="bar" aria-hidden="true"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list nav__list--primary">
+                <li class="nav__item"><a href="#" class="nav__link">PRICING</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">COMPANY</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">BLOG</a></li>
+            </ul>
+            <ul class="nav__list nav__list--secondary">
+                <li class="nav__item"><a href="#" class="nav__link">LOGIN</a></li>
+                <li class="nav__item"><a href="#" class="nav__link nav__link--btn">Get started</a></li>
+            </ul>
+        </nav>
+
+       
+
+    </div>
+</div>
+    </header>    
+
+
+    <main>
+
+    </main>
+    <script>
+       const  navToggle= document.querySelector(".hamburger");
+       const navbar = document.querySelector(".nav");
+
+       const menuToggle =()=>{
+
+        // toggle aria-expanded if navbar has property of data visible
+        navbar.hasAttribute("data-visible") ?
+          navToggle.setAttribute("aria-expanded", false) :
+          navToggle.setAttribute("aria-expanded", true);
+          
+        navbar.toggleAttribute("data-visible");
+        navToggle.classList.toggle("active")
+        
+       }
+
+       navToggle.addEventListener("click", menuToggle)
+
+        </script>
 </body>
 </html>

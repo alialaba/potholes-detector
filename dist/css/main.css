@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap");
 html {
   font-size: 100%;
   box-sizing: border-box;
@@ -17,6 +23,7 @@ html {
 /* 3. Allow perccentage based height */
 html, body {
   height: 100%;
+  background-color: #F2F2F2;
 }
 
 /* 4. Improve media defaults */
@@ -50,4 +57,129 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+.container {
+  margin: 0 auto;
+  width: min(1200px, 90%);
+  /* added for nav-toggle positioning */
+}
+
+.header {
+  background-color: #F2F2F2;
+  padding: 1rem;
+}
+.header__nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .visually-hidden {
+  position: absolute;
+  left: 0;
+  top: -500px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+@media (min-width: 800px) {
+  .header .hamburger {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
+  .header .hamburger {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    display: block;
+    padding: 0.5em;
+    z-index: 99;
+  }
+  .header .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #000;
+    transition: all 0.3s ease-in-out;
+  }
+  .header .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .header .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .header .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+.nav__link {
+  color: #000;
+}
+.nav__link--btn {
+  padding: 0.8rem 1.6rem;
+  background-color: #110F0F;
+  color: #fff;
+  border-radius: 100px;
+}
+@media (min-width: 800px) {
+  .nav__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav__list > * + * {
+    margin-left: 1em;
+  }
+  .nav__list--primary {
+    background-color: #fff;
+    padding: 0.9rem 1.8rem;
+    border-radius: 100px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    max-width: 300px;
+  }
+  .nav__link {
+    font-family: "Bubblegum Sans", cursive;
+  }
+  .nav__list--secondary {
+    margin-left: 0 auto;
+  }
+}
+@media (max-width: 800px) {
+  .nav {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: all 0.5s ease-in;
+  }
+  .nav[data-visible] {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .nav__list > * + * {
+    margin-top: 0.5em;
+  }
+  .nav__list--primary {
+    margin-bottom: 2em;
+  }
 }/*# sourceMappingURL=main.css.map */

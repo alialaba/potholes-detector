@@ -1,0 +1,11 @@
+$medium: 800px;
+$desktop: 800px;
+// $max-mediuem: 100;
+
+@mixin for-tablet{
+@media (max-width: #{$medium}){ @content;}
+}
+
+@mixin for-desktop{
+@media (min-width: #{$desktop}){ @content; }
+}
