@@ -25,13 +25,13 @@
         </button>
         <nav class="nav">
             <ul class="nav__list nav__list--primary">
-                <li class="nav__item"><a href="#" class="nav__link">PRICING</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">COMPANY</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">BLOG</a></li>
+                <li class="nav__item--primary"><a href="#" class="nav__link nav__link--primary">PRICING</a></li>
+                <li class="nav__item--primary"><a href="#" class="nav__link nav__link--primary">COMPANY</a></li>
+                <li class="nav__item--primary"><a href="#" class="nav__link nav__link--primary">BLOG</a></li>
             </ul>
             <ul class="nav__list nav__list--secondary">
-                <li class="nav__item"><a href="#" class="nav__link">LOGIN</a></li>
-                <li class="nav__item"><a href="#" class="nav__link nav__link--btn">Get started</a></li>
+                <li class="nav__item--secondary"><a href="#" class="nav__link nav__link--secondary">LOGIN</a></li>
+                <li class="nav__item--secondary"><a href="#" class="nav__link nav__link--secondary nav__link--btn">Get started</a></li>
             </ul>
         </nav>
 
@@ -44,25 +44,68 @@
 
     <main>
 
+        <section>
+            <div class="container">
+                <div class="hero cp-flex-wrap">
+                    <div class="hero__content">
+                        <h1 class="hero__title">Advanced technology to detect potholes and alert users to their presence </h1>
+                        <p class="hero__text">Ability to access real-time information on potholes in your area, helping you plan your route and avoid potential hazards.</p>
+                        <button class="btn">Get Started</button>
+                    </div>
+
+                    <div class="hero__diagram">
+                        <div class="hero__road">
+
+                        </div>
+                        <div class="hero__meter">
+                            <img src="/images/mete.png"/>
+                            <!-- <ul>
+                               <div style="display: flex; justify-content: space-between;">
+                                <li style="display: flex;">
+                                    <h4>From:</h4>
+                                    <p>Greenhouse</p>
+                                </li>
+
+                                <li  style="display: flex;">
+                                    <h4>Destination:</h4>
+                                    <p>Lekki</p>
+                                </li>
+                            </div>
+                            </ul> -->
+                            <!-- <ul style="background-color: #EBEBEB; padding: 1em;">
+                             <div style="display: flex; justify-content: space-between;">
+                                 <li>
+                                     <h4>Distance</h4>
+                                     <p>34KM</p>
+                                 </li>
+ 
+                                 <li>
+                                     <h4>Suggested</h4>
+                                     <p>Ikeja- Bariga</p>
+                                 </li>
+                             </div>
+
+                             <div style="display: flex; justify-content: space-between;">
+                                <li style="display: flex;">
+                                    <h4>Porthole:</h4>
+                                    <p>Pothole detected</p>
+                                </li>
+
+                                <li style="display: flex;">
+                                    <h4>Dist</h4>
+                                    <p>12m</p>
+                                </li>
+                            </div>
+                             </ul> -->
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
     </main>
-    <script>
-       const  navToggle= document.querySelector(".hamburger");
-       const navbar = document.querySelector(".nav");
-
-       const menuToggle =()=>{
-
-        // toggle aria-expanded if navbar has property of data visible
-        navbar.hasAttribute("data-visible") ?
-          navToggle.setAttribute("aria-expanded", false) :
-          navToggle.setAttribute("aria-expanded", true);
-          
-        navbar.toggleAttribute("data-visible");
-        navToggle.classList.toggle("active")
-        
-       }
-
-       navToggle.addEventListener("click", menuToggle)
-
-        </script>
+   
+    <script src="./app/js/main.js"></script>
 </body>
 </html>

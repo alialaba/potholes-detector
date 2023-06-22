@@ -1,0 +1,27 @@
+@import "../base/variables";
+.hero{
+     &__content{
+        width: 50%;
+     }
+     &__title{
+        font-size: 3rem;
+        line-height: 1.1;
+    }
+    
+    &__diagram{
+        background-image: url(/images/hero-bg-right.svg);
+        background-repeat: no-repeat;
+        background-size: auto;
+    }
+    &__road{
+        background-color: $brown-clr;
+        width: 530px;
+        height: 140px;
+        border-radius: 6px;
+    }
+    &__meter{
+        width: 350px;
+        margin: 0 auto;
+       
+    }
+}

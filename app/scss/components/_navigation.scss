@@ -6,7 +6,7 @@
 
 .header{
     background-color: $gray-main;
-    padding: 1rem ;
+    padding: 2rem  1em;
 
     &__nav-wrapper{
         display: flex;
@@ -45,7 +45,7 @@
             width: 25px;
             height: 3px;
             margin: 5px auto;
-            background-color: #000;
+            background-color: $black;
             -webkit-transition: all 0.3s ease-in-out;
             transition: all 0.3s ease-in-out;
         
@@ -94,22 +94,61 @@
         }
         &__list--primary{
             background-color: $white;
-            padding: .9rem 1.8rem;
+            padding: .6rem 1.2rem;
             border-radius: 100px;
             position: absolute;
             left: 0;
             right: 0;
             margin: 0 auto;
-            max-width: 300px ;
+            max-width: 350px ;
+
+            display: flex;
+            justify-content: space-between;
 
         }
+        &__item{
+            // color: #fff;
+            // background-color: #000;
+            &--primary{
+                padding: .5em 1em;
+                border-radius: 100px;
+            &:hover,
+            &:active,
+            &:focus{
+                background-color: $brown-clr;
+              
+        
+            }
+
+            }
+            
+        }
         &__link{
+           &--primary{
             font-family: $font-Bubblegum;
-            // color: red;
+
+            &:hover,
+            &:active,
+            &:focus{
+                color: $white;
+                transition: all 0.3s;
+        
+            }
+
+           }
+
+
+           &--secondary{
+            font-family: $font-hind;
+            font-weight: 700;
+           }
         }
 
         &__list--secondary{
-            margin-left: 0 auto;
+            // margin-left: 0 auto;
+            // display: flex;
+
+            
             
         }
     }

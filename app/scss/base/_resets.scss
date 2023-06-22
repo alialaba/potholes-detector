@@ -69,3 +69,13 @@ html{
     /* added for nav-toggle positioning */
     // position: relative;
   }
+
+  section{
+    padding: 3em 0;
+  }
+
+  .cp-flex-wrap{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
