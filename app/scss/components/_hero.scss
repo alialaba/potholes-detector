@@ -1,7 +1,33 @@
 @import "../base/variables";
 .hero{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+  align-items: center;
+
+
      &__content{
-        width: 50%;
+        
+     }
+     &__version{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #D9D9D9;
+        width: min(200px, 70%);
+        padding: .5em;
+        border-radius:100px;
+
+        &> * + *{
+         margin-left: 1em;
+        }
+     }
+
+     &__new{
+        background-color: $brown-clr;
+        color: $white;
+        padding: 0 .5em;
+        border-radius:100px;
      }
      &__title{
         font-size: 3rem;

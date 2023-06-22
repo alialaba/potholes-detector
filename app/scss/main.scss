@@ -1,5 +1,12 @@
+//Base
 @import "base/resets";
 @import "base/variables";
-@import "components/navigation";
 @import "base/mixins";
+
+//Components
+@import "components/navigation";
+@import "components/button";
+
+
+//change to layouts
 @import "components/hero"

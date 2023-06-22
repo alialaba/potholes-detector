@@ -1,0 +1,20 @@
+@import "../base/variables";
+.btn{
+    border: none;
+  border-radius: 100px;
+  padding: 12px 25px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-bg{
+    @extend .btn;
+    background-color: $brown-clr;
+    color:$white;
+}
+.btn-transparent{
+    @extend .btn;
+    border: 2px solid $brown-clr;
+    color:$white;
+}

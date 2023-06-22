@@ -70,12 +70,19 @@ html{
     // position: relative;
   }
 
+
   section{
     padding: 3em 0;
   }
 
+
+  //comp: injects margin between elements via their common parent:
+    .stack > * + * {
+      margin-block-start: 1.5rem;
+    }
+
   .cp-flex-wrap{
-    display:flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    // display:flex;
+    // justify-content: space-between;
+    // flex-wrap: wrap;
   }
