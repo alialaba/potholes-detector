@@ -95,12 +95,12 @@ section {
   height: 1px;
   overflow: hidden;
 }
-@media (min-width: 800px) {
+@media (min-width: 944px) {
   .header .hamburger {
     display: none;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 944px) {
   .header .hamburger {
     background: transparent;
     border: 0;
@@ -141,7 +141,7 @@ section {
   color: #fff;
   border-radius: 100px;
 }
-@media (min-width: 800px) {
+@media (min-width: 944px) {
   .nav__list {
     display: flex;
     justify-content: center;
@@ -180,8 +180,11 @@ section {
     font-family: "Hind Siliguri", sans-serif;
     font-weight: 700;
   }
+  .nav__list--secondary {
+    margin-left: 0 auto;
+  }
 }
-@media (max-width: 800px) {
+@media (max-width: 944px) {
   .nav {
     position: absolute;
     left: 0;
@@ -231,10 +234,12 @@ section {
 }
 
 .hero {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 9.6rem;
-  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+.hero__content {
+  flex: 1 0 52%;
 }
 .hero__version {
   display: flex;
@@ -244,6 +249,7 @@ section {
   width: min(200px, 70%);
   padding: 0.5em;
   border-radius: 100px;
+  font-size: 0.9rem;
 }
 .hero__version > * + * {
   margin-left: 1em;
@@ -253,21 +259,40 @@ section {
   color: #fff;
   padding: 0 0.5em;
   border-radius: 100px;
+  font-size: 0.9rem;
 }
 .hero__title {
   font-size: 3rem;
   line-height: 1.1;
+  width: min(500px, 100%);
+  font-family: "Bubblegum Sans", cursive;
+}
+.hero__text {
+  width: min(500px, 100%);
+  font-family: "Hind Siliguri", sans-serif;
 }
 .hero__diagram {
   background-image: url(/images/hero-bg-right.svg);
   background-repeat: no-repeat;
   background-size: auto;
+  flex: 1 0 40%;
+  position: relative;
 }
 .hero__road {
   background-color: #110F0F;
-  width: 530px;
+  width: min(500px, 100%);
   height: 140px;
   border-radius: 6px;
+  margin: 0 auto;
+}
+.hero__road::after {
+  position: absolute;
+  content: "hello";
+  color: #fff;
+  width: 30px;
+  height: 10px;
+  background-color: red;
+  top: 0;
 }
 .hero__meter {
   width: 350px;
