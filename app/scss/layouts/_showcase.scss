@@ -1,0 +1,54 @@
+@import "../base/variables";
+
+.showcase{
+    &__row{
+        display: flex ;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 3rem;
+    }
+
+    &__row1{
+        border: 5px solid  $brown-clr;
+        border-radius: 80px;
+    }
+    &__title{
+        text-align: center;
+    }
+    &__content{
+        flex: 1 0 52%;
+        position: relative;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        &::before{
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            content: "";
+            background-image: url(/images/hero-bg-right.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: min(547px, 100%);
+            height: min(540px, 100%);
+        }
+    }
+    &__img{
+        flex: 1 0 40%;
+        // padding-left: 2rem;
+
+    }
+    &__display{
+        flex: 1 0 52%;
+    }
+    &__data{
+        flex: 1 0 40%;
+    }
+    &__text{
+        font-size: 2rem;
+        // align-self: flex-end;
+        // width: min(500px, 100%);
+    }
+}

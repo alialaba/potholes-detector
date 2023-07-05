@@ -1,0 +1,90 @@
+
+@import "../base/mixins";
+@import "../base/variables";
+.download{
+    // position: relative;
+    &__subheading{
+        
+        // width: min(385px, 100%);
+        // margin: 0 auto;
+        text-align: center;
+    }
+    &__row{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap:3rem;
+        width: min(1100px, 100%);
+        margin: 0 auto;
+        // overflow:auto;
+        position: relative;
+
+
+        @include for-desktop{
+            &::after{
+                position: absolute;
+                content: "hello downlaod";
+                background-image: url(/images/hero-bg-right.svg);
+                background-repeat: no-repeat;
+                background-size: 100%;
+                width: 90%;
+                height: 100%;
+                top: 100px;
+                bottom: 0;
+                left: 20%;
+                right: 0;
+                z-index: -90;
+    
+    
+            }
+        }
+        
+    }
+    &__col{
+        border-radius: 80px;
+        border: 5px solid $brown-clr;
+        padding-top: 2em;
+        // flex: 1 0 45%;
+        height: 580px;
+        width: 525px;
+        // margin: 0 2rem;
+        background-color: #f2f2f2;
+        
+        
+
+        &:hover .download__img--left{
+            background-size: 90%;
+            
+           }
+
+        
+    }
+    &__img--left{
+            background-image: url(/images/mobile1.svg);
+            background-repeat: no-repeat;
+            // background-position-x: right 100%;
+            // background-position-y: bottom;
+
+            background-position-x:  right;
+            background-position-y: bottom ;
+            background-size: 80%;
+            height: 500px;
+            // width: 420px;
+            transition: .45s ease all;
+            // z-index: 10;
+
+    }
+    &__subtitle{
+        text-align: center;
+        // padding-top: 1em;
+
+    }
+    &__action{
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    
+}

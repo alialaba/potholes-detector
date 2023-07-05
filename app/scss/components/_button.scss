@@ -1,11 +1,12 @@
 @import "../base/variables";
 .btn{
     border: none;
-  border-radius: 100px;
+  border-radius: 80px;
   padding: 12px 25px;
   text-align: center;
   font-size: 16px;
   cursor: pointer;
+  transition: .5s all ease;
 }
 
 .btn-bg{
@@ -15,6 +16,11 @@
 }
 .btn-transparent{
     @extend .btn;
-    border: 2px solid $brown-clr;
-    color:$white;
+    border: 3px solid $brown-clr;
+    color:$brown-clr;
+
+    &:hover{
+        background-color: $brown-clr;
+        color: $white;
+    }
 }

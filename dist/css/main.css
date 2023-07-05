@@ -8,6 +8,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap");
 html {
   font-size: 100%;
   box-sizing: border-box;
@@ -216,11 +220,12 @@ section {
 
 .btn, .btn-transparent, .btn-bg {
   border: none;
-  border-radius: 100px;
+  border-radius: 80px;
   padding: 12px 25px;
   text-align: center;
   font-size: 16px;
   cursor: pointer;
+  transition: 0.5s all ease;
 }
 
 .btn-bg {
@@ -229,7 +234,11 @@ section {
 }
 
 .btn-transparent {
-  border: 2px solid #110F0F;
+  border: 3px solid #110F0F;
+  color: #110F0F;
+}
+.btn-transparent:hover {
+  background-color: #110F0F;
   color: #fff;
 }
 
@@ -274,7 +283,9 @@ section {
 .hero__diagram {
   background-image: url(/images/hero-bg-right.svg);
   background-repeat: no-repeat;
-  background-size: auto;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
   flex: 1 0 40%;
   position: relative;
 }
@@ -297,4 +308,107 @@ section {
 .hero__meter {
   width: 350px;
   margin: 0 auto;
+}
+
+.showcase__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 3rem;
+}
+.showcase__row1 {
+  border: 5px solid #110F0F;
+  border-radius: 80px;
+}
+.showcase__title {
+  text-align: center;
+}
+.showcase__content {
+  flex: 1 0 52%;
+  position: relative;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.showcase__content::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  content: "";
+  background-image: url(/images/hero-bg-right.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: min(547px, 100%);
+  height: min(540px, 100%);
+}
+.showcase__img {
+  flex: 1 0 40%;
+}
+.showcase__display {
+  flex: 1 0 52%;
+}
+.showcase__data {
+  flex: 1 0 40%;
+}
+.showcase__text {
+  font-size: 2rem;
+}
+
+.download__subheading {
+  text-align: center;
+}
+.download__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 3rem;
+  width: min(1100px, 100%);
+  margin: 0 auto;
+  position: relative;
+}
+@media (min-width: 944px) {
+  .download__row::after {
+    position: absolute;
+    content: "hello downlaod";
+    background-image: url(/images/hero-bg-right.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 90%;
+    height: 100%;
+    top: 100px;
+    bottom: 0;
+    left: 20%;
+    right: 0;
+    z-index: -90;
+  }
+}
+.download__col {
+  border-radius: 80px;
+  border: 5px solid #110F0F;
+  padding-top: 2em;
+  height: 580px;
+  width: 525px;
+  background-color: #f2f2f2;
+}
+.download__col:hover .download__img--left {
+  background-size: 90%;
+}
+.download__img--left {
+  background-image: url(/images/mobile1.svg);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: bottom;
+  background-size: 80%;
+  height: 500px;
+  transition: 0.45s ease all;
+}
+.download__subtitle {
+  text-align: center;
+}
+.download__action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }/*# sourceMappingURL=main.css.map */
