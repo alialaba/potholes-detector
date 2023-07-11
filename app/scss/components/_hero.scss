@@ -13,7 +13,7 @@
 
 
      &__content{
-        flex:1 0 52%;
+        flex:1 0 40%;
         
      }
      &__version{
@@ -50,13 +50,18 @@
         // font-size: 1.2rem;
     }
     &__diagram{
+       flex:1 0 52%;
+       position: relative;
+
+       &::before{
+        position: absolute;
+        content: "";
         background-image: url(/images/hero-bg-right.svg);
         background-repeat: no-repeat;
         height: 100%;
         width: 100%;
         background-size:cover;
-       flex:1 0 40%;
-       position: relative;
+       }
     }
     &__road{
         background-color: $brown-clr;
@@ -64,21 +69,57 @@
         height: 140px;
         border-radius: 6px;
         margin: 0 auto;
-        
-        &::after{
-            position: absolute;
-            content: "hello";
-            color: #fff;
-            width: 30px;
-            height: 10px;
+        position: relative;
+        @include for-large-desktop{
+            width: min(600px, 100%);
             background-color: red;
-            top: 0;
-
         }
+        
+    }
+    &__line{
+        width: min(500px, 100%);
+        margin: 0 auto;
+        transform: translateY(250%);
+
+        @include for-large-desktop{
+            width: min(600px, 100%);
+            background-color: red;
+        }
+
+        
+    }
+    &__line--long{
+        width: 97px;
+        height: 12px;
+        background-color: #fff;
+        display: inline-block;
+        margin-left: 1rem;
+
+        @include for-large-desktop{
+           
+        &:nth-child(2){
+            margin-right: 4rem;
+        }
+        }
+    }
+
+    &__line--short{
+        width: 46px;
+        height: 12px;
+        background-color: #fff;
+        display: inline-block;
+        margin-left: .5rem;
+        @include for-large-desktop{
+            margin-left: 1rem;
+        }
+
+        
+        
     }
     &__meter{
         width: 350px;
         margin: 0 auto;
        
     }
+    
 }

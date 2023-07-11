@@ -1,14 +1,22 @@
 $medium: 944px;
 $desktop: 944px;
+$large-desktop:1200px;
 $mobile: 500px;
 
-@mixin for-tablet{
-@media (max-width: #{$medium}){ @content;}
+
+
+
+
+@mixin for-large-desktop{
+@media (min-width: #{$large-desktop}){ @content; }
 }
 
 @mixin for-desktop{
-@media (min-width: #{$desktop}){ @content; }
+    @media (min-width: #{$desktop}){ @content; }
 }
+@mixin for-tablet{
+    @media (max-width: #{$medium}){ @content;}
+    }
 
 @mixin for-mobile{
     @media (max-width: #{$mobile}){ @content; }

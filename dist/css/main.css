@@ -74,7 +74,7 @@ a {
 }
 
 section {
-  padding: 3em 0;
+  padding: 4em 0;
 }
 
 .stack > * + * {
@@ -248,7 +248,7 @@ section {
   gap: 3rem;
 }
 .hero__content {
-  flex: 1 0 52%;
+  flex: 1 0 40%;
 }
 .hero__version {
   display: flex;
@@ -281,13 +281,17 @@ section {
   font-family: "Hind Siliguri", sans-serif;
 }
 .hero__diagram {
+  flex: 1 0 52%;
+  position: relative;
+}
+.hero__diagram::before {
+  position: absolute;
+  content: "";
   background-image: url(/images/hero-bg-right.svg);
   background-repeat: no-repeat;
   height: 100%;
   width: 100%;
   background-size: cover;
-  flex: 1 0 40%;
-  position: relative;
 }
 .hero__road {
   background-color: #110F0F;
@@ -295,15 +299,48 @@ section {
   height: 140px;
   border-radius: 6px;
   margin: 0 auto;
+  position: relative;
 }
-.hero__road::after {
-  position: absolute;
-  content: "hello";
-  color: #fff;
-  width: 30px;
-  height: 10px;
-  background-color: red;
-  top: 0;
+@media (min-width: 1200px) {
+  .hero__road {
+    width: min(600px, 100%);
+    background-color: red;
+  }
+}
+.hero__line {
+  width: min(500px, 100%);
+  margin: 0 auto;
+  transform: translateY(250%);
+}
+@media (min-width: 1200px) {
+  .hero__line {
+    width: min(600px, 100%);
+    background-color: red;
+  }
+}
+.hero__line--long {
+  width: 97px;
+  height: 12px;
+  background-color: #fff;
+  display: inline-block;
+  margin-left: 1rem;
+}
+@media (min-width: 1200px) {
+  .hero__line--long:nth-child(2) {
+    margin-right: 4rem;
+  }
+}
+.hero__line--short {
+  width: 46px;
+  height: 12px;
+  background-color: #fff;
+  display: inline-block;
+  margin-left: 0.5rem;
+}
+@media (min-width: 1200px) {
+  .hero__line--short {
+    margin-left: 1rem;
+  }
 }
 .hero__meter {
   width: 350px;
