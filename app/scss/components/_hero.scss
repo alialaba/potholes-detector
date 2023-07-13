@@ -72,18 +72,24 @@
         position: relative;
         @include for-large-desktop{
             width: min(600px, 100%);
-            background-color: red;
+            // background-color: red;
         }
         
+    }
+    &__cars{
+        position: absolute;
+        content: "";
+        top: -12px;
     }
     &__line{
         width: min(500px, 100%);
         margin: 0 auto;
         transform: translateY(250%);
+        position: relative;
 
         @include for-large-desktop{
             width: min(600px, 100%);
-            background-color: red;
+            // background-color: red;
         }
 
         
@@ -95,14 +101,62 @@
         display: inline-block;
         margin-left: 1rem;
 
+
+        &:nth-child(2)::before{
+            position: absolute;
+            content: "";
+            background-image: url(/images/traffic-icon.svg);
+            background-repeat: no-repeat;
+            width: 32.532px;
+            height: 32.532px;
+            background-color: rgba(216, 89, 18, 0.15);
+            left: 48%;
+            top: -150%;
+            // padding: .2em .6em;
+            border-radius: 100%;
+            // border: 0.87px solid #FFF;
+            color: #fff;
+            display: none;
+            font-size: 18px;
+   
+           @include for-large-desktop{
+              
+              display: block;
+            }
+        }
+
+        &:nth-child(2)::after{
+         position: absolute;
+         content: "Detector";
+         left: 40%;
+         bottom: -100%;
+        //  padding: .2em .6em;
+        width: 130px;
+        height: 40px;
+        text-align: center;
+        border-radius: 2.561px;
+        border: 0.87px solid #FFF;
+        color: #fff;
+        display: none;
+        font-size: 18px;
+
+        @include for-large-desktop{
+           
+           display: block;
+            }
+
+            
+        
+        }
+
         @include for-large-desktop{
            
         &:nth-child(2){
-            margin-right: 4rem;
+            margin-right: 3rem;
         }
         }
     }
-
+   
     &__line--short{
         width: 46px;
         height: 12px;
@@ -110,11 +164,40 @@
         display: inline-block;
         margin-left: .5rem;
         @include for-large-desktop{
-            margin-left: 1rem;
+            margin-left: 6rem;
         }
 
-        
-        
+        // work on this 
+
+        &:nth-child(2)::after{
+            // visibility: visible;
+            // position: absolute;
+            // content: "hello there this the learning curve ";
+            // background-color: red;
+            // background-image: url(/images/traffic-icon.svg);
+            // background-image: url(/images/mock-locator.svg);
+            // background-repeat: no-repeat;
+            // width: 75.682px;
+            // height: 95.69px;
+            
+            // color: red;
+            // left: 20%;
+            // right: 0;
+        }
+
+    }
+    &__line--detector{
+        // padding: .2em .6em;
+        // border-radius: 2.561px;
+        // border: 0.87px solid #FFF;
+        // color: #fff;
+        // visibility: visible;
+
+        @include for-tablet{
+            // display: block;
+            visibility: hidden;
+        }
+// background: #110F0F;
     }
     &__meter{
         width: 350px;

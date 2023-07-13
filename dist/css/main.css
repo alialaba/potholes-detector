@@ -82,6 +82,16 @@ section {
           margin-block-start: 1.5rem;
 }
 
+@keyframes road-moving {
+  100% {
+    transform: translate(-2400px);
+  }
+}
+@keyframes road-moving {
+  100% {
+    transform: translate(-2400px);
+  }
+}
 .header {
   background-color: #F2F2F2;
   padding: 2rem 1em;
@@ -304,18 +314,22 @@ section {
 @media (min-width: 1200px) {
   .hero__road {
     width: min(600px, 100%);
-    background-color: red;
   }
+}
+.hero__cars {
+  position: absolute;
+  content: "";
+  top: -12px;
 }
 .hero__line {
   width: min(500px, 100%);
   margin: 0 auto;
   transform: translateY(250%);
+  position: relative;
 }
 @media (min-width: 1200px) {
   .hero__line {
     width: min(600px, 100%);
-    background-color: red;
   }
 }
 .hero__line--long {
@@ -325,9 +339,48 @@ section {
   display: inline-block;
   margin-left: 1rem;
 }
+.hero__line--long:nth-child(2)::before {
+  position: absolute;
+  content: "";
+  background-image: url(/images/traffic-icon.svg);
+  background-repeat: no-repeat;
+  width: 32.532px;
+  height: 32.532px;
+  background-color: rgba(216, 89, 18, 0.15);
+  left: 48%;
+  top: -150%;
+  border-radius: 100%;
+  color: #fff;
+  display: none;
+  font-size: 18px;
+}
+@media (min-width: 1200px) {
+  .hero__line--long:nth-child(2)::before {
+    display: block;
+  }
+}
+.hero__line--long:nth-child(2)::after {
+  position: absolute;
+  content: "Detector";
+  left: 40%;
+  bottom: -100%;
+  width: 130px;
+  height: 40px;
+  text-align: center;
+  border-radius: 2.561px;
+  border: 0.87px solid #FFF;
+  color: #fff;
+  display: none;
+  font-size: 18px;
+}
+@media (min-width: 1200px) {
+  .hero__line--long:nth-child(2)::after {
+    display: block;
+  }
+}
 @media (min-width: 1200px) {
   .hero__line--long:nth-child(2) {
-    margin-right: 4rem;
+    margin-right: 3rem;
   }
 }
 .hero__line--short {
@@ -339,7 +392,12 @@ section {
 }
 @media (min-width: 1200px) {
   .hero__line--short {
-    margin-left: 1rem;
+    margin-left: 6rem;
+  }
+}
+@media (max-width: 944px) {
+  .hero__line--detector {
+    visibility: hidden;
   }
 }
 .hero__meter {
@@ -393,6 +451,11 @@ section {
   font-size: 2rem;
 }
 
+@keyframes road-moving {
+  100% {
+    transform: translate(-2400px);
+  }
+}
 .download__subheading {
   text-align: center;
 }

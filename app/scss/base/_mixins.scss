@@ -21,3 +21,14 @@ $mobile: 500px;
 @mixin for-mobile{
     @media (max-width: #{$mobile}){ @content; }
     }
+
+
+    // animation: road-moving 30s infinite linear;
+    // transition: all 1s linear;
+  
+  
+  @keyframes road-moving {
+    100% {
+      transform: translate(-2400px);
+    }
+  }
