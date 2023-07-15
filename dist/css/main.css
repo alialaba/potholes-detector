@@ -337,9 +337,19 @@ section {
   height: 12px;
   background-color: #fff;
   display: inline-block;
-  margin-left: 1rem;
+  margin-left: 0.5rem;
 }
-.hero__line--long:nth-child(2)::before {
+@media (min-width: 1200px) {
+  .hero__line--long {
+    margin-left: 1rem;
+  }
+}
+@media (min-width: 1200px) {
+  .hero__line--detector {
+    margin-left: 8.5rem;
+  }
+}
+.hero__line--detector::before {
   position: absolute;
   content: "";
   background-image: url(/images/traffic-icon.svg);
@@ -355,11 +365,11 @@ section {
   font-size: 18px;
 }
 @media (min-width: 1200px) {
-  .hero__line--long:nth-child(2)::before {
+  .hero__line--detector::before {
     display: block;
   }
 }
-.hero__line--long:nth-child(2)::after {
+.hero__line--detector::after {
   position: absolute;
   content: "Detector";
   left: 40%;
@@ -374,13 +384,8 @@ section {
   font-size: 18px;
 }
 @media (min-width: 1200px) {
-  .hero__line--long:nth-child(2)::after {
+  .hero__line--detector::after {
     display: block;
-  }
-}
-@media (min-width: 1200px) {
-  .hero__line--long:nth-child(2) {
-    margin-right: 3rem;
   }
 }
 .hero__line--short {
@@ -391,13 +396,25 @@ section {
   margin-left: 0.5rem;
 }
 @media (min-width: 1200px) {
-  .hero__line--short {
+  .hero__line--short:last-child {
     margin-left: 6rem;
   }
 }
-@media (max-width: 944px) {
-  .hero__line--detector {
-    visibility: hidden;
+.hero__line--sketch {
+  height: 110px;
+  width: 80px;
+  position: absolute;
+  bottom: -50px;
+  right: 85px;
+  background-image: url(/images/traffic-sketch.svg);
+  background-repeat: no-repeat;
+  z-index: -99;
+  visibility: hidden;
+}
+@media (min-width: 1200px) {
+  .hero__line--sketch {
+    visibility: visible;
+    display: inline-block;
   }
 }
 .hero__meter {

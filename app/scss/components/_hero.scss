@@ -99,61 +99,69 @@
         height: 12px;
         background-color: #fff;
         display: inline-block;
-        margin-left: 1rem;
+        margin-left: .5rem;
+        @include for-large-desktop{
+            margin-left: 1rem;
+        }   
 
-
-        &:nth-child(2)::before{
-            position: absolute;
-            content: "";
-            background-image: url(/images/traffic-icon.svg);
-            background-repeat: no-repeat;
-            width: 32.532px;
-            height: 32.532px;
-            background-color: rgba(216, 89, 18, 0.15);
-            left: 48%;
-            top: -150%;
-            // padding: .2em .6em;
-            border-radius: 100%;
-            // border: 0.87px solid #FFF;
-            color: #fff;
-            display: none;
-            font-size: 18px;
-   
-           @include for-large-desktop{
-              
-              display: block;
-            }
+        @include for-large-desktop{
+           
+        &:nth-child(3){
+            // margin-right: 2rem;
         }
+        }
+    }
 
-        &:nth-child(2)::after{
-         position: absolute;
-         content: "Detector";
-         left: 40%;
-         bottom: -100%;
-        //  padding: .2em .6em;
-        width: 130px;
-        height: 40px;
-        text-align: center;
-        border-radius: 2.561px;
-        border: 0.87px solid #FFF;
+    &__line--detector{
+        @include for-large-desktop{
+            margin-left: 8.5rem;
+        }
+        &::before{
+            position: absolute;
+        content: "";
+        background-image: url(/images/traffic-icon.svg);
+        background-repeat: no-repeat;
+        width: 32.532px;
+        height: 32.532px;
+        background-color: rgba(216, 89, 18, 0.15);
+        left: 48%;
+        top: -150%;
+        border-radius: 100%;
         color: #fff;
         display: none;
         font-size: 18px;
-
-        @include for-large-desktop{
-           
-           display: block;
-            }
-
-            
         
+
+       @include for-large-desktop{
+          
+          display: block;
         }
 
-        @include for-large-desktop{
-           
-        &:nth-child(2){
-            margin-right: 3rem;
         }
+
+    }
+
+    &__line--detector{
+
+        &::after{
+            position: absolute;
+        content: "Detector";
+        left: 40%;
+        bottom: -100%;
+       width: 130px;
+       height: 40px;
+       text-align: center;
+       border-radius: 2.561px;
+       border: 0.87px solid #FFF;
+       color: #fff;
+       display: none;
+       font-size: 18px;
+
+
+       @include for-large-desktop{
+          
+          display: block;
+           }   
         }
     }
    
@@ -163,45 +171,38 @@
         background-color: #fff;
         display: inline-block;
         margin-left: .5rem;
+       
+        &:last-child{
+            @include for-large-desktop{
+                margin-left: 6rem;
+            }
+        }
+    }
+
+    &__line--sketch{
+        // width: 662.297px;
+        height: 110px;
+        width: 80px;
+        position: absolute;
+        bottom: -50px;
+        right: 85px;
+        background-image: url(/images/traffic-sketch.svg);
+        background-repeat: no-repeat;
+        z-index: -99;
+        visibility: hidden;
+        // margin-left: -4rem;
+        
+
         @include for-large-desktop{
-            margin-left: 6rem;
+            visibility: visible;
+            display: inline-block;
         }
-
-        // work on this 
-
-        &:nth-child(2)::after{
-            // visibility: visible;
-            // position: absolute;
-            // content: "hello there this the learning curve ";
-            // background-color: red;
-            // background-image: url(/images/traffic-icon.svg);
-            // background-image: url(/images/mock-locator.svg);
-            // background-repeat: no-repeat;
-            // width: 75.682px;
-            // height: 95.69px;
-            
-            // color: red;
-            // left: 20%;
-            // right: 0;
-        }
-
     }
-    &__line--detector{
-        // padding: .2em .6em;
-        // border-radius: 2.561px;
-        // border: 0.87px solid #FFF;
-        // color: #fff;
-        // visibility: visible;
-
-        @include for-tablet{
-            // display: block;
-            visibility: hidden;
-        }
-// background: #110F0F;
-    }
+    
     &__meter{
         width: 350px;
         margin: 0 auto;
+        
        
     }
     
