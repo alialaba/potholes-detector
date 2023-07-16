@@ -428,7 +428,7 @@ section {
   justify-content: space-around;
   gap: 3rem;
 }
-.showcase__row1 {
+.showcase__map {
   border: 5px solid #110F0F;
   border-radius: 80px;
 }
@@ -436,7 +436,7 @@ section {
   text-align: center;
 }
 .showcase__content {
-  flex: 1 0 52%;
+  flex: 1 0 49%;
   position: relative;
   padding: 2rem;
   display: flex;
@@ -455,8 +455,15 @@ section {
   width: min(547px, 100%);
   height: min(540px, 100%);
 }
-.showcase__img {
-  flex: 1 0 40%;
+.showcase__view {
+  flex: 1 0 42%;
+  z-index: -99;
+  margin-right: 3.5em;
+}
+@media (min-width: 1200px) {
+  .showcase__view {
+    margin-top: 2rem;
+  }
 }
 .showcase__display {
   flex: 1 0 52%;

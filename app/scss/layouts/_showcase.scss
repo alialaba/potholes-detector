@@ -8,15 +8,17 @@
         gap: 3rem;
     }
 
-    &__row1{
+    &__map{
         border: 5px solid  $brown-clr;
         border-radius: 80px;
+        // width: 1297px;
+        // height: 583px;
     }
     &__title{
         text-align: center;
     }
     &__content{
-        flex: 1 0 52%;
+        flex: 1 0 49%;
         position: relative;
         padding: 2rem;
         display: flex;
@@ -35,9 +37,13 @@
             height: min(540px, 100%);
         }
     }
-    &__img{
-        flex: 1 0 40%;
-        // padding-left: 2rem;
+    &__view{
+        flex: 1 0 42%;
+        z-index: -99;
+        margin-right: 3.5em;
+        @include for-large-desktop{
+        margin-top: 2rem;
+        }
 
     }
     &__display{
