@@ -85,3 +85,77 @@ html{
     // justify-content: space-between;
     // flex-wrap: wrap;
   }
+
+
+  //set overall input range
+  input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent ;
+    cursor: pointer;
+    width: 15rem;
+  }
+
+                          /***** Track Styles *****/
+/***** Chrome, Safari, Opera, and Edge Chromium *****/
+input[type="range"]::-webkit-slider-runnable-track {
+  background: linear-gradient(159deg, rgba(216, 89, 18, 0.71) 0%, rgba(126, 21, 208, 0.79) 29.17%);
+  height: 0.5rem;
+  border-radius: 56.626px;
+}
+
+/******** Firefox ********/
+input[type="range"]::-moz-range-track {
+  background: linear-gradient(159deg, rgba(216, 89, 18, 0.71) 0%, rgba(126, 21, 208, 0.79) 29.17%);
+  height: 0.5rem;
+  border-radius: 56.626px;
+}
+
+/***** Thumb Styles *****/
+/***** Chrome, Safari, Opera, and Edge Chromium *****/
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  margin-top: -5px; /* Centers thumb on the track */
+  border-radius: 56.626px;
+border: 3.539px solid #FFF;
+box-shadow: 2.1234567165374756px 2.831275701522827px 11.325102806091309px 0px rgba(132, 132, 132, 0.25);
+
+background: #7E15D0;
+width: 20.741px;
+height: 17.786px;  
+} 
+
+/***** Thumb Styles *****/
+/***** Firefox *****/
+input[type="range"]::-moz-range-thumb {
+  border: none; /*Removes extra border that FF applies*/
+  border-radius: 0; /*Removes default border-radius that FF applies*/
+  border-radius: 56.626px;
+  border: 3.539px solid #FFF;
+  box-shadow: 2.1234567165374756px 2.831275701522827px 11.325102806091309px 0px rgba(132, 132, 132, 0.25);
+  background: #7E15D0;
+  width: 12.741px;
+  height: 7.786px;
+}
+
+
+/***** Focus Styles *****/
+/* Removes default focus */
+input[type="range"]:focus {
+  outline: none;
+}
+
+/***** Chrome, Safari, Opera, and Edge Chromium *****/
+input[type="range"]:focus::-webkit-slider-thumb {
+  // border: 1px solid #fff;
+  // outline: 3px solid #fff;
+  // outline-offset: 0.125rem;
+}
+
+/******** Firefox ********/
+input[type="range"]:focus::-moz-range-thumb {
+  // border: 1px solid #fff;
+  // outline: 3px solid #fff;
+  // outline-offset: 0.125rem;     
+}
