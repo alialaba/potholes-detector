@@ -1,189 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <!-- <link rel="stylesheet" href="/app/scss/main.css"> -->
-    <link rel="stylesheet" href="/dist/css/main.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="/dist/css/main.css" />
+  </head>
+  <body>
     <header class="header">
-        <div class="container">
+      <div class="container">
         <div class="header__nav-wrapper">
-        <a href="#" class="header__logo">
-                <img src="/images/logo.svg" alt="brand logo">
-                <!-- <span>Rutole</span> -->
-        </a>
-        <button class="nav-toggle hamburger" aria-controls="open-navigation" aria-expanded="false">
+          <a href="#" class="header__logo">
+            <img src="/images/logo.svg" alt="brand logo" />
+            <!-- <span>Rutole</span> -->
+          </a>
+          <button
+            class="nav-toggle hamburger"
+            aria-controls="open-navigation"
+            aria-expanded="false"
+          >
             <!-- <span class="visually-hidden">Menu</span> -->
             <span class="bar" aria-hidden="true"></span>
             <span class="bar" aria-hidden="true"></span>
             <span class="bar" aria-hidden="true"></span>
-        </button>
-        <nav class="nav">
+          </button>
+          <nav class="nav">
             <ul class="nav__list nav__list--primary">
-                <li class="nav__item--primary"><a href="#" class="nav__link nav__link--primary">PRICING</a></li>
-                <li class="nav__item--primary"><a href="#" class="nav__link nav__link--primary">COMPANY</a></li>
-                <li class="nav__item--primary"><a href="#" class="nav__link nav__link--primary">BLOG</a></li>
+              <li class="nav__item--primary">
+                <a href="#" class="nav__link nav__link--primary">PRICING</a>
+              </li>
+              <li class="nav__item--primary">
+                <a href="#" class="nav__link nav__link--primary">COMPANY</a>
+              </li>
+              <li class="nav__item--primary">
+                <a href="#" class="nav__link nav__link--primary">BLOG</a>
+              </li>
             </ul>
             <ul class="nav__list nav__list--secondary">
-                <li class="nav__item--secondary"><a href="#" class="nav__link nav__link--secondary">LOGIN</a></li>
-                <li class="nav__item--secondary"><a href="#" class="nav__link nav__link--secondary nav__link--btn">Get started</a></li>
+              <li class="nav__item--secondary">
+                <a href="#" class="nav__link nav__link--secondary">LOGIN</a>
+              </li>
+              <li class="nav__item--secondary">
+                <a
+                  href="#"
+                  class="nav__link nav__link--secondary nav__link--btn"
+                  >Get started</a
+                >
+              </li>
             </ul>
-        </nav>
-
-       
-
-    </div>
-</div>
-    </header>    
-
+          </nav>
+        </div>
+      </div>
+    </header>
 
     <main>
+      <section>
+        <div class="container">
+          <div class="hero">
+            <div class="hero__content stack">
+              <div class="hero__version">
+                <span class="hero__new">New</span>
+                <p class="hero__number">Rutole version 2.0</p>
+              </div>
+              <h1 class="hero__title">
+                Advanced technology to detect potholes and alert users to their
+                presence
+              </h1>
+              <p class="hero__text">
+                Ability to access real-time information on potholes in your
+                area, helping you plan your route and avoid potential hazards.
+              </p>
+              <button class="btn-bg">Get Started</button>
+            </div>
 
-        <section>
-            <div class="container">
-                <div class="hero ">
-                    <div class="hero__content stack">
-                        <div class="hero__version">
-                            <span class="hero__new">New</span>
-                        <p class="hero__number">Rutole version 2.0</p>
-                        </div>
-                        <h1 class="hero__title">Advanced technology to detect potholes and alert users to their presence </h1>
-                        <p class="hero__text">Ability to access real-time information on potholes in your area, helping you plan your route and avoid potential hazards.</p>
-                        <button class="btn-bg">Get Started</button>
-                    </div>
+            <div class="hero__diagram stack">
+              <div class="hero__road">
+                <div
+                  class="hero__cars"
+                  style="
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                  "
+                >
+                  <span
+                    ><img src="/images/car-1-up.png" class="hero__motorist"
+                  /></span>
+                  <span
+                    ><img src="/images/bike-2-up.png" class="hero__motorist"
+                  /></span>
+                  <span
+                    ><img src="/images/car-1-up.png" class="hero__motorist"
+                  /></span>
+                  <span
+                    ><img src="/images/bike-2-up.png" class="hero__motorist"
+                  /></span>
+                </div>
+                <div class="hero__line">
+                  <span class="hero__line--long"></span>
+                  <span class="hero__line--long"></span>
+                  <span class="hero__line--detector"></span>
+                  <!-- <span class="hero__line--detector" style="border: 1px solid #fff;"></span> -->
+                  <!-- <div> -->
+                  <span class="hero__line--short"></span>
+                  <span class="hero__line--sketch"></span>
+                  <span class="hero__line--short"></span>
+                  <!-- </div> -->
+                </div>
 
-                    <div class="hero__diagram stack">
-                        <div class="hero__road">
-                            <div class="hero__cars" style="display: flex; align-items: center; justify-content: center;">
-                                <span><img src="/images/car-1-up.png" class="hero__motorist"/></span>
-                                <span><img src="/images/bike-2-up.png" class="hero__motorist"/></span>
-                                <span><img src="/images/car-1-up.png" class="hero__motorist"/></span>
-                                <span><img src="/images/bike-2-up.png" class="hero__motorist"/></span>
-                            </div>
-                            <div class="hero__line">
-                                <span class="hero__line--long"></span>
-                                <span class="hero__line--long"></span>
-                                <span class="hero__line--detector"></span>
-                                <!-- <span class="hero__line--detector" style="border: 1px solid #fff;"></span> -->
-                                <!-- <div> -->
-                                <span class="hero__line--short"></span>
-                                <span class="hero__line--sketch"></span>
-                                <span class="hero__line--short"></span>
-                                <!-- </div> -->
-                                
-
-                            </div>
-                            
-                            <div class="hero__cars" style="display: flex;">
-                                <!-- <span><img src="/images/car-1-down.png"/></span>
+                <div class="hero__cars" style="display: flex">
+                  <!-- <span><img src="/images/car-1-down.png"/></span>
                                 <span><img src="/images/car-3-down.png"/></span>
                                 <span><img src="/images/car-1-down.png"/></span>
                                 <span><img src="/images/car-3-down.png"/></span> -->
-                            
-                            </div>
-                        </div>
-
-                        <div></div>
-                        <div class="hero__meter">
-                            <img src="/images/mete.png" alt="show destination distance meter "/>
-                        </div>
-                    </div>
-
                 </div>
+              </div>
+
+              <div></div>
+              <div class="hero__meter">
+                <img
+                  src="/images/mete.png"
+                  alt="show destination distance meter "
+                />
+              </div>
             </div>
-            <div style="margin-top: 4em;">
-                <picture>
-                    <source srcset="/imgs/hero.webp" type="images/webp">
-                    <source srcset="/images/rutole-logos.svg" type="image/png">
-                    <img src="/images/rutole-logos.svg" class="" alt="brands images">
-                </picture>
-                <!-- <img src="/images/rutole-logos.svg" alt=""> -->
-            </div>
-        </section>
+          </div>
+        </div>
+        <div style="margin-top: 4em">
+          <picture>
+            <source srcset="/imgs/hero.webp" type="images/webp" />
+            <source srcset="/images/rutole-logos.svg" type="image/png" />
+            <img src="/images/rutole-logos.svg" class="" alt="brands images" />
+          </picture>
+          <!-- <img src="/images/rutole-logos.svg" alt=""> -->
+        </div>
+      </section>
 
-        <section>
-            <div class="container">
-                <div class="showcase">
-                    <h2 class="showcase__title">We gather real-time data on potholes from various sources</h2>
-                    <div class="showcase__map showcase__row">
-                        <div class="showcase__content showcase__col stack">
-
-                          <div class="showcase__location-icon"><img src="/images/location.svg" alt="location icon"/></div>
-                            <h3 class="showcase__text">The map view allows you to zoom in and out, and you can filter potholes based on their severity.</h3>
-                        </div>
-
-                        <div class="showcase__view showcase__col">
-                            <img src="/images/mobile-map.svg" alt="map mobile app view"/>
-
-                        </div>
-                        
-                    </div>
-
-                    <div class="showcase__row showcase__result" style="margin-top: 5rem;">
-                        <div class="showcase__display showcase__col">
-                            <img src="/images/traf-result.svg" alt="traffic result">
-                            
-                                <div class="showcase__feedback">
-                                    <h4>How was your experience</h4>
-                                    <p>What can we do to improve?</p>
-                                  <form class="showcase__form">
-                                    <input type="range" min="10" max="50" step="5" value="5">
-                                  </form>
-                                  <div class="showcase__emoji">
-                                    <img src="/images/awesome.svg" alt="awesoome emoji"/>
-                                  </div>
-                                  <span class="showcase__feedback-text">Awesome</span>
-                                </div>
-                          
-                        </div>
-
-                        <div class="showcase__data showcase__col">
-                           <h3 class="showcase__text">Our database is continually updated to provide the most accurate and up-to-date information on potholes in your area.</h3>
-                            <p class="showcase__goal">our goal is to make our roads safer and reduce the damage caused by potholes. We believe that by providing real-time data and community engagement,</p>
-                        </div>
-                        
-                    </div>
+      <section>
+        <div class="container">
+          <div class="showcase">
+            <h2 class="showcase__title">
+              We gather real-time data on potholes from various sources
+            </h2>
+            <div class="showcase__map showcase__row">
+              <div class="showcase__content showcase__col stack">
+                <div class="showcase__location-icon">
+                  <img src="/images/location.svg" alt="location icon" />
                 </div>
+                <h3 class="showcase__text">
+                  The map view allows you to zoom in and out, and you can filter
+                  potholes based on their severity.
+                </h3>
+              </div>
+
+              <div class="showcase__view showcase__col">
+                <img src="/images/mobile-map.svg" alt="map mobile app view" />
+              </div>
             </div>
 
-        </section>
+            <div
+              class="showcase__row showcase__result"
+              style="margin-top: 5rem"
+            >
+              <div class="showcase__display showcase__col">
+                <img src="/images/traf-result.svg" alt="traffic result" />
 
-        <section >
-            
-            <div class="container ">
-                <div class="download stack">
-                <div class="download__subheading">
-                    <h2 class="download__title">Download on mobile!</h2>
-                    <p class="download__text">Ease , zero damages and stay safe</p>
+                <div class="showcase__feedback">
+                  <h4>How was your experience</h4>
+                  <p>What can we do to improve?</p>
+                  <form class="showcase__form">
+                    <input type="range" min="10" max="50" step="5" value="5" />
+                  </form>
+                  <div class="showcase__emoji">
+                    <img src="/images/awesome.svg" alt="awesoome emoji" />
+                  </div>
+                  <span class="showcase__feedback-text">Awesome</span>
                 </div>
-                <div class="download__row">
-                    <div class="download__col download__col--left">
-                        <h2 class="download__subtitle">Stay connected, stay safe</h2>
-                        
-                        <div class="download__img--left"></div> 
-                    </div>
-                    <div class="download__col download__col--right">
-                        <h2 class="download__subtitle">Enjoy your trip Emoji</h2>
-                        <div class="download__img--left"></div> 
-                    </div>
+              </div>
 
-                </div>
+              <div class="showcase__data showcase__col">
+                <h3 class="showcase__text">
+                  Our database is continually updated to provide the most
+                  accurate and up-to-date information on potholes in your area.
+                </h3>
+                <p class="showcase__goal">
+                  our goal is to make our roads safer and reduce the damage
+                  caused by potholes. We believe that by providing real-time
+                  data and community engagement,
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-                <div class="download__action">
-                    <button class="btn-transparent">Android</button>
-                    <button class="btn-transparent">Ios</button> 
+      <section>
+        <div class="container">
+          <div class="download stack">
+            <div class="download__subheading">
+              <h2 class="download__title">Download on mobile!</h2>
+              <p class="download__text">Ease , zero damages and stay safe</p>
+            </div>
+            <div class="download__row">
+              <div class="download__col download__col--left">
+                <h2 class="download__subtitle">Stay connected, stay safe</h2>
+
+                <div class="download__img--left"></div>
+              </div>
+              <div class="download__col download__col--right">
+                <h2 class="download__subtitle">Enjoy your trip Emoji</h2>
+                <div class="download__img--left"></div>
+              </div>
+            </div>
+
+            <div class="download__action">
+              <button class="btn-transparent">Android</button>
+              <button class="btn-transparent">Ios</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="platform">
+        <div class="platform__headline headline ">
+        <h2 class="platform__title">A tested and trusted platform</h2>
+        <p class="platform__text">We provide resources and tips for avoiding potholes and promoting safe driving practices.</p>
+        </div>
+        <div class="container">
+            <div class="platform__brands" >
+                <img src="/images/principle.svg" class="platform__brand" alt="principle logo"/>
+                <div class="platform__brand"><img src="/images/zoho.svg" alt="zoho logo"/></div>
+                <img src="/images/slack.svg" alt="slack logo" class="platform__brand"/>
+                <img src="/images/intercom.svg" alt="intercom logo" class="platform__brand"/>
+                <img src="/images/framer.svg" alt="framer logo"  class="platform__brand"/>
+                <img src="/images/figma.svg" alt="figma logo" class="platform__brand"/>
+                <img src="/images/sketch.svg" alt="sketch logo" class="platform__brand"/>
+                <img src="/images/whiteboard.svg" alt="whiteboard logo" class="platform__brand"/>
+
+            </div>
+
+            <div class="platform__action">
+                <h2 class="platform__action-text">We ensure to secure your journey to destination</h2>
+                <div class="platform__action-group">
+                    <button class="btn-transparent">Get Started</button>
+                    <button class="btn-transparent">Help</button>
                 </div>
             </div>
         </div>
-        </section>
-
+    </div>
+      </section>
     </main>
-   
+
     <script src="./app/js/main.js"></script>
-</body>
+  </body>
 </html>

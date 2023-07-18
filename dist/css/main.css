@@ -12,6 +12,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap");
 html {
   font-size: 100%;
   box-sizing: border-box;
@@ -141,6 +143,10 @@ input[type=range]:focus {
 
 /***** Chrome, Safari, Opera, and Edge Chromium *****/
 /******** Firefox ********/
+.headline {
+  text-align: center;
+}
+
 @keyframes road-moving {
   100% {
     transform: translate(-2400px);
@@ -631,4 +637,38 @@ input[type=range]:focus {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@keyframes road-moving {
+  100% {
+    transform: translate(-2400px);
+  }
+}
+.platform__action {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  align-items: center;
+  margin: 0 auto;
+}
+@media (max-width: 540px) {
+  .platform__action {
+    justify-content: center;
+    text-align: center;
+  }
+}
+.platform__action-text {
+  width: min(350px, 100%);
+  font-size: 2rem;
+}
+.platform__brands {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3em;
+}
+.platform__brand {
+  border-radius: 16.606px;
+  border: 4.152px solid #110F0F;
+  padding: 0.4em;
 }/*# sourceMappingURL=main.css.map */
