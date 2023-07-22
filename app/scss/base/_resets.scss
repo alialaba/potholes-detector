@@ -35,12 +35,14 @@ html{
   Typographic tweaks!
   6. Add accessible line-height and Improve text rendering
   */
+
   body {
     -webkit-font-smoothing: antialiased;
     line-height: 1.5;
     // font-family: 'Roboto', sans-serif;
     // background-color: $gray-main;
     }
+
     
     /* 7. Remove built-in form typography styles */
     
@@ -171,10 +173,10 @@ input[type="range"]:focus::-moz-range-thumb {
   width: min(600px, 100%);
 }
 .tweet__avater{
-  width: 35px;
-  height: 35px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  background-color: red;
+  // background-color: red;
   // display: ;
   // border: 2px solid red;
 }

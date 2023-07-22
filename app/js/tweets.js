@@ -3,6 +3,16 @@ import { timeline } from "./data.js";
 const usersTweets = document.querySelector(".experience__tweets");
 
 
+//generate Colors 
+function generateColor(){
+    let hexcodes = "0123456789ABCDEF";
+    let color = "#";
+    for(let i = 0; i < 6; i++){
+        color += hexcodes[Math.floor(Math.random() * 16)]
+    }
+    return color;
+}
+
 
 function displayUsersTweet(item){
 const userTweeter = document.createElement("article");
@@ -31,6 +41,8 @@ userTweetName.textContent = item.name;
 userTweetHandle.textContent = item.handle;
 userTweetMessage.textContent = item.message;
 userTweetIcon.classList.add("fa-brands", "fa-twitter");
+//generate Color for avatars
+userTweetHeaderAvatar.style.backgroundColor = generateColor();
 
 // console.log(userTweeter)
 //Append to parent

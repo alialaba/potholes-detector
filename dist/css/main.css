@@ -157,10 +157,9 @@ input[type=range]:focus {
 }
 
 .tweet__avater {
-  width: 35px;
-  height: 35px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  background-color: red;
 }
 
 .tweet__col-left {
@@ -702,7 +701,7 @@ input[type=range]:focus {
   text-align: center;
   position: relative;
   border-radius: 28.4px;
-  border: 2.367px solid #110F0F;
+  border: 2.367px solid #110f0f;
   padding: 1em;
 }
 .experience__preview::before {
@@ -728,11 +727,19 @@ input[type=range]:focus {
   justify-content: center;
   align-items: center;
   gap: 2em;
+  height: 440px;
+  /* hide scrollbar but allow scrolling */
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+  overflow-y: scroll;
+}
+.experience__tweets::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
 }
 .experience__tweet {
   width: min(335px, 100%);
   border-radius: 28.315px;
-  border: 2.36px solid #110F0F;
+  border: 2.36px solid #110f0f;
   padding: 1em;
   position: relative;
 }
