@@ -162,4 +162,25 @@ input[type="range"]:focus::-moz-range-thumb {
 .headline{
   text-align: center;
 }
-
+.tweet__header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2em;
+  // justify-content: center;
+  width: min(600px, 100%);
+}
+.tweet__avater{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: red;
+  // display: ;
+  // border: 2px solid red;
+}
+.tweet__col-left{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
