@@ -2,7 +2,8 @@
 @import "../base/mixins";
 .platform{
     &__title{
-    
+        font-family: $font-Bubblegum;
+        font-size: 2.5rem;    
     }
     &__action{
         display: flex;
@@ -21,6 +22,10 @@
     &__action-text{
         width: min(350px, 100%);
         font-size: 2rem;
+    }
+    &__headline{
+        width: min(500px, 100%);
+        margin-bottom: 5rem;
     }
     &__action-group{
        

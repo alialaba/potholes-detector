@@ -1,0 +1,24 @@
+.footer{
+    border-top: 1px solid #110F0F;
+
+
+    &__content{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__bottom{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__social{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+    }
+
+}

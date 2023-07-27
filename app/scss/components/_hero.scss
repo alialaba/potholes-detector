@@ -3,9 +3,7 @@
     display:flex;
     flex-wrap: wrap;
     gap: 3rem;
-    // justify-content: space-between;
     
-
     @include for-tablet{
     //     grid-template-columns: 1fr;
     // gap: 6.4rem;
@@ -43,6 +41,12 @@
         line-height: 1.1;
         width: min(500px, 100%);
         font-family: $font-Bubblegum;
+
+        @include for-tablet{
+            // font-size: clamp(2rem, -2vw + 1rem, 3rem);
+            // 64 24 20 48 40
+            
+        }
     }
     &__text{
         width: min(500px, 100%);
@@ -74,7 +78,6 @@
             width: min(600px, 100%);
             // background-color: red;
         }
-        
     }
     &__cars{
         position: absolute;
@@ -142,24 +145,22 @@
     }
 
     &__line--detector{
-
         &::after{
-            position: absolute;
+        position: absolute;
         content: "Detector";
         left: 40%;
         bottom: -100%;
-       width: 130px;
-       height: 40px;
-       text-align: center;
-       border-radius: 2.561px;
-       border: 0.87px solid #FFF;
-       color: #fff;
-       display: none;
-       font-size: 18px;
+        width: 130px;
+        height: 40px;
+        text-align: center;
+        border-radius: 2.561px;
+        border: 0.87px solid #FFF;
+        color: #fff;
+        display: none;
+        font-size: 18px;
 
 
        @include for-large-desktop{
-          
           display: block;
            }   
         }
@@ -201,9 +202,7 @@
     
     &__meter{
         width: 350px;
-        margin: 0 auto;
-        
-       
+        margin: 0 auto;       
     }
     
 }

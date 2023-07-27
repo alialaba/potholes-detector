@@ -73,7 +73,7 @@ html{
   }
 
 
-  section{
+  section, footer{
     padding: 4em 0;
   }
 
@@ -163,6 +163,7 @@ input[type="range"]:focus::-moz-range-thumb {
 }
 .headline{
   text-align: center;
+  margin: 0 auto;
 }
 .tweet__header{
   display: flex;
