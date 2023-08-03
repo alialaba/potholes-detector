@@ -13,10 +13,9 @@ function generateColor(){
     return color;
 }
 
-
 function displayUsersTweet(item){
 const userTweeter = document.createElement("article");
-const userTweetOverlay  = document.createElement("div")
+let  userTweetOverlay  = document.createElement("div")
 const userTweet = document.createElement("div");
 const userTweetHeader = document.createElement("div");
 const userTweetwrapCol = document.createElement("div")
@@ -35,6 +34,28 @@ userTweetHeader.className = "tweet__header";
 userTweetHeaderAvatar.className = "tweet__avater";
 userTweetwrapCol.className = "tweet__col-left";
 userTweetOverlay.className = "experience__tweet-overlay"
+
+// Add event listener to userTweetOverlay
+userTweetOverlay.addEventListener("click", (event)=>{
+
+    //Select Elements
+   let experienceMessage = document.querySelector(".experience__message");
+   let tweetUsername = document.querySelector(".twitter-user__name");
+   let tweetHandle = document.querySelector(".twitter-user__handle");
+    // console.log(experienceMessage);
+
+    //target clicked element
+    const clickedTweet = event.target;
+    if(clickedTweet){
+        experienceMessage.textContent = item.message;
+        tweetUsername.textContent = item.name;
+        tweetHandle.textContent = item.handle;
+
+    }
+
+
+
+})
 
 //Add content
 userTweetName.textContent = item.name;
@@ -63,3 +84,6 @@ userTweet.appendChild(userTweetMessage)
 }
 
 timeline.forEach((item)=> displayUsersTweet(item))
+
+
+
