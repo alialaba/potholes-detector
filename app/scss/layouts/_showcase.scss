@@ -73,13 +73,29 @@
         position: absolute;
         // display: none;
         font-family: $font-hind;
-
         top: -20px;
         left: 100px;
 
         @include for-mobile{
             top: -10px;
             left: 50px;
+            &::before{
+                position: absolute;
+                content: "x";
+                right: 85%;
+                bottom: 220px;
+                font-size: 1.2rem;
+                background-color: #7E15D0;
+                color: #FFF;
+                width: 28px;
+                height: 28px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 100%;
+                cursor: pointer;
+                font-family: $font-hind;
+            }
         }
        
         @include for-large-desktop{

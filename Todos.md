@@ -1,0 +1,4 @@
+- animate cars moving left and right with setinterval display of detector onload
+- users should be able to cancel the feedback after giving feedback
+- animate brands to move in same directions 
+- loading display bg.

@@ -587,6 +587,23 @@ input[type=range]:focus {
     top: -10px;
     left: 50px;
   }
+  .showcase__feedback::before {
+    position: absolute;
+    content: "x";
+    right: 85%;
+    bottom: 220px;
+    font-size: 1.2rem;
+    background-color: #7E15D0;
+    color: #FFF;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    cursor: pointer;
+    font-family: "Hind Siliguri", sans-serif;
+  }
 }
 @media (min-width: 1200px) {
   .showcase__feedback {

@@ -59,3 +59,16 @@ function updateChange(){
 }
 
 feedbackInput.addEventListener("input", updateChange);
+
+
+
+//Remove 
+const showcaseFeedback = document.querySelector(".showcase__feedback");
+const showcaseDisplay = document.querySelector(".showcase__display");
+
+showcaseFeedback.addEventListener("click", ()=>{
+  showcaseDisplay.removeChild(showcaseFeedback);
+})
+
+
+showcaseFeedback.addEventListener
