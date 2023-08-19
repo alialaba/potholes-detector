@@ -149,6 +149,21 @@ input[type=range]:focus {
   margin: 0 auto;
 }
 
+.twitter-user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
+}
+
+.twitter-user__head {
+  display: flex;
+}
+
+.twitter__icon {
+  margin-left: 50px;
+}
+
 .tweet__header {
   display: flex;
   align-items: center;
@@ -157,10 +172,15 @@ input[type=range]:focus {
   width: min(600px, 100%);
 }
 
-.tweet__avater {
+.tweet__avater, .twitter-user__avater {
   width: 40px;
   height: 40px;
   border-radius: 50%;
+}
+
+.twitter-user__avater {
+  background-color: #56CCF2;
+  margin-right: 10px;
 }
 
 .tweet__col-left {
@@ -170,16 +190,6 @@ input[type=range]:focus {
   gap: 5px;
 }
 
-@keyframes road-moving {
-  100% {
-    transform: translate(-2400px);
-  }
-}
-@keyframes road-moving {
-  100% {
-    transform: translate(-2400px);
-  }
-}
 .header {
   background-color: #F2F2F2;
   padding: 2rem 1em;
@@ -636,11 +646,6 @@ input[type=range]:focus {
   font-size: 2rem;
 }
 
-@keyframes road-moving {
-  100% {
-    transform: translate(-2400px);
-  }
-}
 .download__subheading {
   text-align: center;
 }
@@ -698,11 +703,6 @@ input[type=range]:focus {
   justify-content: center;
 }
 
-@keyframes road-moving {
-  100% {
-    transform: translate(-2400px);
-  }
-}
 .platform__title {
   font-family: "Bubblegum Sans", cursive;
   font-size: 2.5rem;
@@ -714,32 +714,52 @@ input[type=range]:focus {
   gap: 2rem;
   align-items: center;
   margin: 0 auto;
+  padding-top: 5rem;
 }
 @media (max-width: 540px) {
   .platform__action {
     justify-content: center;
     text-align: center;
+    padding-top: 2.5rem;
   }
 }
 .platform__action-text {
   width: min(350px, 100%);
   font-size: 2rem;
+  font-family: "Hind Siliguri", sans-serif;
 }
 .platform__headline {
   width: min(500px, 100%);
   margin-bottom: 5rem;
 }
+.platform__action-group > * + * {
+  margin-left: 2em;
+}
 .platform__brands {
   display: flex;
   flex-wrap: wrap;
   gap: 3em;
+  width: min(900px, 85%);
+  margin: 0 auto;
 }
 .platform__brand {
   border-radius: 16.606px;
   border: 4.152px solid #110F0F;
   padding: 0.4em;
+  animation: moving-logos 10s infinite;
+}
+@keyframes moving-logos {
+  0% {
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
+.experience__title {
+  font-family: "Bubblegum Sans", cursive;
+}
 .experience__preview {
   width: min(700px, 100%);
   margin: 0 auto;
@@ -777,6 +797,7 @@ input[type=range]:focus {
   -ms-overflow-style: none; /* for Internet Explorer, Edge */
   scrollbar-width: none; /* for Firefox */
   overflow-y: scroll;
+  margin-top: 5em;
 }
 .experience__tweets::-webkit-scrollbar {
   display: none; /* for Chrome, Safari, and Opera */

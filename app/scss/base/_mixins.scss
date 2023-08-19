@@ -27,8 +27,22 @@ $mobile: 540px;
     // transition: all 1s linear;
   
   
-  @keyframes road-moving {
-    100% {
-      transform: translate(-2400px);
+  // @keyframes road-moving {
+  //   100% {
+  //     transform: translate(-2400px);
+  //   }
+  // }
+
+  @mixin keyframes($animation-name) {
+    @-webkit-keyframes #{$animation-name} {
+      @content;
     }
+    @keyframes #{$animation-name} {
+      @content;
+    }
+  }
+  
+  @mixin animation($str) {
+    -webkit-animation: #{$str};
+    animation: #{$str};
   }

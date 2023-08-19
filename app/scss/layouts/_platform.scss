@@ -12,32 +12,48 @@
         gap:2rem;
         align-items: center;
         margin: 0 auto;
+        padding-top: 5rem;
 
         @include for-mobile{
            justify-content: center;
            text-align: center;
+           padding-top: 2.5rem;
         }
         
     }
     &__action-text{
         width: min(350px, 100%);
         font-size: 2rem;
+        font-family: $font-hind;
     }
     &__headline{
         width: min(500px, 100%);
         margin-bottom: 5rem;
     }
-    &__action-group{
-       
+    &__action-group > * + *{
+       margin-left: 2em;
     }
     &__brands{
         display: flex; 
         flex-wrap: wrap; 
         gap: 3em;
+        width: min(900px, 85%);
+        margin: 0 auto;
     }
     &__brand{
         border-radius: 16.606px;
-border: 4.152px solid #110F0F;
+        border: 4.152px solid #110F0F;
         padding: .4em;
+
+        @include keyframes (moving-logos) {
+            0% {
+                transform: translateX(50%);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+        @include animation('moving-logos 10s infinite');
+
     }
 }

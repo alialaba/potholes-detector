@@ -4,14 +4,14 @@ const usersTweets = document.querySelector(".experience__tweets");
 
 
 //generate Colors 
-function generateColor(){
-    let hexcodes = "0123456789ABCDEF";
-    let color = "#";
-    for(let i = 0; i < 6; i++){
-        color += hexcodes[Math.floor(Math.random() * 16)]
-    }
-    return color;
-}
+// function generateColor(){
+//     let hexcodes = "0123456789ABCDEF";
+//     let color = "#";
+//     for(let i = 0; i < 6; i++){
+//         color += hexcodes[Math.floor(Math.random() * 16)]
+//     }
+//     return color;
+// }
 
 function displayUsersTweet(item){
 const userTweeter = document.createElement("article");
@@ -42,6 +42,7 @@ userTweetOverlay.addEventListener("click", (event)=>{
    let experienceMessage = document.querySelector(".experience__message");
    let tweetUsername = document.querySelector(".twitter-user__name");
    let tweetHandle = document.querySelector(".twitter-user__handle");
+   let tweetAvatar = document.querySelector(".twitter-user__avater")
     // console.log(experienceMessage);
 
     //target clicked element
@@ -50,6 +51,8 @@ userTweetOverlay.addEventListener("click", (event)=>{
         experienceMessage.textContent = item.message;
         tweetUsername.textContent = item.name;
         tweetHandle.textContent = item.handle;
+        tweetAvatar.style.backgroundColor = item.color;
+        
 
     }
 
@@ -63,7 +66,7 @@ userTweetHandle.textContent = item.handle;
 userTweetMessage.textContent = item.message;
 userTweetIcon.classList.add("fa-brands", "fa-twitter");
 //generate Color for avatars
-userTweetHeaderAvatar.style.backgroundColor = generateColor();
+userTweetHeaderAvatar.style.backgroundColor = item.color;
 
 // console.log(userTweeter)
 //Append to parent
