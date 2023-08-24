@@ -647,7 +647,12 @@ input[type=range]:focus {
 }
 
 .download__subheading {
+  margin-bottom: 4em;
   text-align: center;
+}
+.download__title {
+  font-family: "Bubblegum Sans", cursive;
+  font-size: 2.5rem;
 }
 .download__row {
   display: flex;
@@ -701,6 +706,10 @@ input[type=range]:focus {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 4em;
+}
+.download__action > * + * {
+  margin-left: 2em;
 }
 
 .platform__title {
@@ -759,6 +768,11 @@ input[type=range]:focus {
 
 .experience__title {
   font-family: "Bubblegum Sans", cursive;
+  font-size: 2.5rem;
+}
+.experience__headline {
+  width: min(600px, 100%);
+  margin-bottom: 3em;
 }
 .experience__preview {
   width: min(700px, 100%);
@@ -772,9 +786,9 @@ input[type=range]:focus {
 .experience__preview::before {
   position: absolute;
   content: "Preview";
-  left: -50px;
-  top: -40px;
-  font-size: 1.2rem;
+  left: -27px;
+  top: -30px;
+  font-size: 1rem;
   background-color: #110F0F;
   color: #fff;
   padding: 0.5em;
@@ -838,25 +852,28 @@ input[type=range]:focus {
   border-radius: 50px;
   font-size: 1rem;
 }
-
 .footer {
   border-top: 1px solid #110F0F;
 }
 .footer__content {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-bottom: 3em;
+  width: 80%;
+  gap: 5em;
 }
 .footer__bottom {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  gap: 3em;
 }
 .footer__social {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1em;
+  margin-top: 1em;
 }/*# sourceMappingURL=main.css.map */

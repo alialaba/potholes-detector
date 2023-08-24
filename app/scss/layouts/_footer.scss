@@ -4,21 +4,27 @@
 
     &__content{
         display: flex;
-        align-items: center;
+        // row-gap: 20em;
+        // align-items: center;
         justify-content: space-between;
         flex-wrap: wrap;
+        margin-bottom: 3em;
+        width: 80%;
+        gap: 5em;
     }
     &__bottom{
         display: flex;
         align-items: center;
         justify-content: space-between;
         flex-wrap: wrap;
+        gap: 3em;
     }
     &__social{
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 1em;
+        margin-top: 1em;
     }
 
 }
