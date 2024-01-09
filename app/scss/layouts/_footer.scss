@@ -1,3 +1,5 @@
+@import "../base/mixins";
+@import "../base/variables";
 .footer{
     border-top: 1px solid #110F0F;
 
@@ -25,6 +27,30 @@
         justify-content: center;
         gap: 1em;
         margin-top: 1em;
+
+        @include for-mobile{
+            // align-items: left;
+            justify-content: start;
+        }
+    }
+    &__list {
+       
+    }
+    &__item{
+        margin-bottom: 1em;
+    }
+    &__subtitle{
+        font-family: $font-Bubblegum;
+        font-size: 1.1rem;
+        margin-bottom: 1em;
+    }
+    &__tag{
+        background-color: $brown-clr;
+        color: $white;
+        padding: .5em;
+        font-size: .8rem;
+        border-radius: 55.309px;
+        margin-left: .8em;
     }
 
 }

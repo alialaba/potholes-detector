@@ -24,3 +24,22 @@
         color: $white;
     }
 }
+.btn-help{
+    @extend .btn;
+    border: 3px solid $brown-clr;
+    color:$brown-clr;
+    //  position: relative;
+    // &:hover{
+    //     position: absolute;
+    //     background-color: red;
+    // }
+}
+.btn-pricing{
+    @extend .btn;
+}
+.btn-pricing{
+    @extend .btn;
+    background-color: $brown-clr;
+    color: $white;
+    width: 100%;
+}

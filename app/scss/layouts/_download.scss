@@ -51,6 +51,7 @@
         width: 525px;
         // margin: 0 2rem;
         background-color: #f2f2f2;
+        // z-index: 100;
         
         
 
@@ -69,11 +70,12 @@
 
             background-position-x:  right;
             background-position-y: bottom ;
-            background-size: 80%;
+            background-size: 70%;
             height: 500px;
             // width: 420px;
             transition: .45s ease all;
-            // z-index: 10;
+            
+        
 
     }
     &__subtitle{
