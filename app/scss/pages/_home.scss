@@ -1,0 +1,227 @@
+.hero{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    
+    @include for-tablet{
+    //     grid-template-columns: 1fr;
+    // gap: 6.4rem;
+    }
+
+
+     &__content{
+        flex:1 0 40%;
+     }
+     &__version{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $gray85;
+        width: min(170px, 70%);
+        padding: .5em;
+        border-radius:100px;
+        font-size: .8rem;
+        font-family: $font-hind;
+
+        &> * + *{
+         margin-left: 1em;
+        }
+     }
+
+     &__new{
+        background-color: $brown-clr;
+        color: $white;
+        padding: 0 .5em;
+        border-radius:100px;
+        font-size: .8rem;
+     }
+     &__title{
+        font-size: 3rem;
+        line-height: 1.1;
+        width: min(500px, 100%);
+        font-family: $font-Bubblegum;
+
+        @include for-tablet{
+            // font-size: clamp(2rem, -2vw + 1rem, 3rem);
+            // 64 24 20 48 40
+            
+        }
+    }
+    &__text{
+        width: min(400px, 100%);
+        font-family: $font-hind;
+        font-size: 1.1rem;
+        
+        
+
+        @include for-tablet{
+            // font-size: clamp(2rem, -2vw + 1rem, 3rem);
+            // 64 24 20 48 40
+            font-size: 1rem;
+            
+        }
+    }
+    &__diagram{
+       flex:1 0 52%;
+       position: relative;
+
+       &::before{
+        position: absolute;
+        content: "";
+        background-image: url(/images/hero-bg-right.svg);
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+        background-size:cover;
+       }
+    }
+    &__road{
+        background-color: $brown-clr;
+        width: min(500px, 100%);
+        height: 140px;
+        border-radius: 6px;
+        margin: 0 auto;
+        position: relative;
+        @include for-large-desktop{
+            width: min(600px, 100%);
+            // background-color: red;
+        }
+    }
+    &__motorist{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+ 
+    }
+    &__motorist--left{
+        position: absolute;
+        content: "";
+        bottom: 30px;
+    }
+    &__motorist--right{
+        position: absolute;
+        content: "";
+        top: 42px;
+    }
+    &__line{
+        width: min(500px, 100%);
+        margin: 0 auto;
+        transform: translateY(250%);
+        position: relative;
+
+        @include for-large-desktop{
+            width: min(600px, 100%);
+            // background-color: red;
+        }
+
+        
+    }
+    &__line--long{
+        width: 97px;
+        height: 12px;
+        background-color: $white;
+        display: inline-block;
+        margin-left: .5rem;
+        @include for-large-desktop{
+            margin-left: 1rem;
+        }   
+
+        @include for-large-desktop{
+           
+        &:nth-child(3){
+            // margin-right: 2rem;
+        }
+        }
+    }
+
+    &__line--detector{
+        @include for-large-desktop{
+            margin-left: 8.5rem;
+        }
+        &::before{
+            position: absolute;
+        content: "";
+        background-image: url(/images/traffic-icon.svg);
+        background-repeat: no-repeat;
+        width: 32.532px;
+        height: 32.532px;
+        background-color: rgba(216, 89, 18, 0.15);
+        left: 48%;
+        top: -150%;
+        border-radius: 100%;
+        color: $white;
+        display: none;
+        font-size: 18px;
+        
+
+       @include for-large-desktop{
+          
+          display: block;
+        }
+
+        }
+
+    }
+
+    &__line--detector{
+        &::after{
+        position: absolute;
+        content: "Detector";
+        left: 40%;
+        bottom: -100%;
+        width: 130px;
+        height: 40px;
+        text-align: center;
+        border-radius: 2.561px;
+        border: 0.87px solid $white;
+        color: $white;
+        display: none;
+        font-size: 18px;
+
+
+       @include for-large-desktop{
+          display: block;
+           }   
+        }
+    }
+   
+    &__line--short{
+        width: 46px;
+        height: 12px;
+        background-color: $white;
+        display: inline-block;
+        margin-left: .5rem;
+       
+        &:last-child{
+            @include for-large-desktop{
+                margin-left: 6rem;
+            }
+        }
+    }
+
+    &__line--sketch{
+        // width: 662.297px;
+        height: 110px;
+        width: 80px;
+        position: absolute;
+        bottom: -50px;
+        right: 85px;
+        background-image: url(/images/traffic-sketch.svg);
+        background-repeat: no-repeat;
+        z-index: -99;
+        visibility: hidden;
+        // margin-left: -4rem;
+        
+
+        @include for-large-desktop{
+            visibility: visible;
+            display: inline-block;
+        }
+    }
+    
+    &__meter{
+        width: 350px;
+        margin: 0 auto;       
+    }
+    
+}

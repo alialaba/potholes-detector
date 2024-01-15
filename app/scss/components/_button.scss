@@ -1,12 +1,14 @@
-@import "../base/variables";
+// @import "../base/variables";
 .btn{
-    border: none;
+  border: none;
   border-radius: 80px;
   padding: 12px 25px;
   text-align: center;
-  font-size: 16px;
+  font-size: 1rem;
   cursor: pointer;
   transition: .5s all ease;
+  font-family: $font-hind;
+  font-weight: 500;
 }
 
 .btn-bg{
