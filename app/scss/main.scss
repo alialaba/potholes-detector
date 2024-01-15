@@ -1,18 +1,30 @@
+//Abstracts
+@import  "abstracts/index";
+
 //Base
-@import "base/resets";
-@import "base/variables";
-@import "base/mixins";
+@import
+ "base/resets",
+"base/variables",
+"base/mixins";
 
 //Components
-@import "components/navigation";
-@import "components/button";
+@import 
+// "components/navigation",
+"components/button";
 
 
-//change to layouts
-@import "components/hero";
-@import "layouts/showcase";
-@import "layouts/download";
-@import "layouts/platform";
-@import "layouts/experience";
-@import "layouts/pricing";
-@import "layouts/footer";
+//Layouts
+// @import "components/hero";
+@import 
+// "layouts/showcase",
+//  "layouts/download",
+//  "layouts/platform",
+//  "layouts/experience",
+//  "layouts/pricing",
+"layouts/navigation",
+"layouts/footer";
+
+
+//Utilities
+
+@import "utilities/index"

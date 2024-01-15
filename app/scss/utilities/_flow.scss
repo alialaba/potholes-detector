@@ -1,0 +1,4 @@
+//comp: injects margin between elements via their common parent:
+.stack > * + * {
+    margin-block-start: 1.5rem;
+  }

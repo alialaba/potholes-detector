@@ -1,5 +1,9 @@
+
+// @import "../base/variables";
+// @import "../abstracts/colors" ;
+
+
 @import "../base/mixins";
-@import "../base/variables";
 
 
 
@@ -72,7 +76,7 @@
     display: flex;
     align-items: center;
     &__link{
-        color: $black;
+        // color: $white
     }
     &__link--btn{
         padding: .8rem 1.6rem;
@@ -94,7 +98,7 @@
         }
         &__list--primary{
             background-color: $white;
-            padding: .6rem 1.2rem;
+            padding: .8rem 1.2rem;
             border-radius: 100px;
             position: absolute;
             left: 0;
@@ -106,32 +110,21 @@
             justify-content: space-between;
 
         }
-        &__item{
-            // color: #fff;
-            // background-color: #000;
-            &--primary{
-                padding: .5em 1em;
-                border-radius: 100px;
-            &:hover,
-            &:active,
-            &:focus{
-                background-color: $brown-clr;
-              
         
-            }
-
-            }
-            
-        }
         &__link{
+            color: $black;
+            font-size: 1rem;
            &--primary{
             font-family: $font-Bubblegum;
+            padding: .5em 1em;
+                border-radius: 100px;
 
             &:hover,
             &:active,
             &:focus{
                 color: $white;
                 transition: all 0.3s;
+                background-color: $brown-clr;
         
             }
 
@@ -143,22 +136,31 @@
             font-weight: 700;
            }
         }
+        &__link--btn{
+            color: white;
 
-        &__list--secondary{
-            margin-left: 0 auto;
-            // display: flex;
-
-            
-            
+            &:hover{
+            background-color: $white;
+            color: $brown-clr;
+            }
         }
+        // &__list--secondary{
+        //     margin-left: 0 auto;
+           
+
+            
+            
+        // }
     }
     @include for-tablet{
+
+
                 position: absolute;
                 left: 0;
                 top: 0;
                 width: 100%;
                 height: 100%;
-                background-color: red;
+                background-color: $gray-main;
                 z-index: 1;
                 justify-content: center;
                 align-items: center;
@@ -176,7 +178,26 @@
                     transform: translateY(0);
             
                 }
+                &__list--secondary li:nth-child(1){
+                    margin-bottom: 1.5em;
+                }
+&__link{
+        color: $brown-clr;
+        font-family: $font-hind;
+        font-weight: $fw-500;
 
+
+        
+
+        
+    }
+    
+
+    &__link--btn{
+        color: $white;
+        // text-transform: uppercase;
+    }
+    
                 &__list{
                     & > * + *{
                         margin-top: .5em;

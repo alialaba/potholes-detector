@@ -1,5 +1,4 @@
-
-@use "variables";
+@import "../abstracts/colors";
 
 html{
     font-size: 100%;
@@ -18,7 +17,7 @@ html{
   /* 3. Allow perccentage based height */
   html,body{
     height: 100%;
-    background-color: variables.$gray-main;
+    background-color: $gray-main;
   }
   /* 4. Improve media defaults */
   img, picture, svg{
@@ -60,32 +59,11 @@ html{
     a{
       text-decoration: none;
     }
-  .container{
-  // --max-width: 1110px;
-  // --padding: 1rem;
-
-    margin: 0 auto;
-    width: min(1200px, 90% );
-  //   width: min(var(--max-width), 100% - (var(--padding) * 2));
-  // margin-inline: auto;
-    /* added for nav-toggle positioning */
-    // position: relative;
-  }
+  
 
 
   section, footer{
     padding: 4em 0;
-  }
-
-
-  //comp: injects margin between elements via their common parent:
-    .stack > * + * {
-      margin-block-start: 1.5rem;
-    }
-  .cp-flex-wrap{
-    // display:flex;
-    // justify-content: space-between;
-    // flex-wrap: wrap;
   }
 
 
