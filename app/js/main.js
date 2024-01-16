@@ -16,14 +16,15 @@ const menuToggle =()=>{
 navToggle.addEventListener("click", menuToggle)
 
 
-//implement slider backback
+//implement range input review
 const feedbackInput = document.getElementById("feedback-input");
 const feedbackText = document.getElementById("feedback-text");
 const feedbackEmoji = document.getElementById("feedback-emoji");
 
 function updateChange(){
-  console.log(this.dataset)
+  
   let feedbackInputValue = feedbackInput.value;
+  console.log(feedbackInputValue);
   
   switch(parseInt(feedbackInputValue)){
     case 10:
@@ -58,17 +59,24 @@ function updateChange(){
   }
 }
 
+
 feedbackInput.addEventListener("input", updateChange);
 
 
-
-//Remove 
+const showcaseCancel = document.querySelector(".showcase__cancel");
 const showcaseFeedback = document.querySelector(".showcase__feedback");
 const showcaseDisplay = document.querySelector(".showcase__display");
 
+//Event 
 showcaseFeedback.addEventListener("click", ()=>{
-  showcaseDisplay.removeChild(showcaseFeedback);
+
+  //target mobile 
+  if(window.matchMedia('(max-width: 540px)').matches){
+    showcaseDisplay.removeChild(showcaseFeedback);
+  }
 })
 
 
-showcaseFeedback.addEventListener
+
+
+
