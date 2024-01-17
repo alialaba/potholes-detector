@@ -20,7 +20,9 @@
     @extend .btn;
     border: 3px solid $brown-clr;
     color:$brown-clr;
-
+    display: inline-flex;
+    font-family: $font-hind;
+    font-weight: 600;
     &:hover{
         background-color: $brown-clr;
         color: $white;

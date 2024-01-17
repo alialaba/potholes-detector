@@ -62,15 +62,13 @@ function updateChange(){
 
 feedbackInput.addEventListener("input", updateChange);
 
-
 const showcaseCancel = document.querySelector(".showcase__cancel");
 const showcaseFeedback = document.querySelector(".showcase__feedback");
 const showcaseDisplay = document.querySelector(".showcase__display");
 
 //Event 
 showcaseFeedback.addEventListener("click", ()=>{
-
-  //target mobile 
+//target mobile 
   if(window.matchMedia('(max-width: 540px)').matches){
     showcaseDisplay.removeChild(showcaseFeedback);
   }

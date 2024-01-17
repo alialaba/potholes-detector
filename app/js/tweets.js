@@ -28,12 +28,16 @@ const userTweetMessage = document.createElement("p");
 // console.log(timeline)
 
 //ClassNames
-userTweeter.className ="experience__tweet";
+userTweeter.className ="tweet";
 userTweet.className ="tweet__user"
 userTweetHeader.className = "tweet__header";
 userTweetHeaderAvatar.className = "tweet__avater";
 userTweetwrapCol.className = "tweet__col-left";
-userTweetOverlay.className = "experience__tweet-overlay"
+userTweetOverlay.className = "tweet__overlay";
+userTweetName.className ="tweet__username";
+userTweetHandle.className ="tweet__handle";
+userTweetMessage.className ="tweet__text";
+
 
 // Add event listener to userTweetOverlay
 userTweetOverlay.addEventListener("click", (event)=>{

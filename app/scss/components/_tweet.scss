@@ -1,0 +1,66 @@
+.tweet {
+
+  width: min(335px, 100%);
+  border-radius: 28.315px;
+  border: 2.36px solid $brown-clr;
+  padding: 1em;
+  position: relative;
+
+  &:hover .tweet__overlay {
+    opacity: 1;
+    cursor: pointer;
+  }  
+
+  &__overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    // backdrop-filter: blur(5px);
+    border-radius: 28.315px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    // background-color: $brown-clr;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+  
+    &::before {
+      position: absolute;
+      content: "Preview";
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      background-color: $brown-clr;
+      padding: .8em;
+      color: $white;
+      border-radius: 50px;
+      font-size: .9rem;
+      font-family: $font-hind;
+    }
+  }
+&__header{
+  margin-bottom: 1em;
+}
+  &__username{
+    font-family: $font-hind;
+    color: $brown-clr;
+    font-size: 1rem;
+    margin-bottom: -8px;
+  }
+  &__handle{
+    font-family: $font-hind;
+    color: $brown-clr;
+    font-size: .8rem;
+  }
+  &__text{
+    font-family: $font-hind;
+    color: $brown-clr;
+    font-size: 1.1rem;
+  }
+}
+
+

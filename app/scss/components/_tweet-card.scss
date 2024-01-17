@@ -1,0 +1,48 @@
+.twitter-user{
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    margin-top: 1em;
+  }
+  .twitter-user__head{
+    display: flex; 
+    font-family: $font-hind;
+  }
+  .twitter-user__name{
+    font-size: 1.1rem;
+   
+    color: $brown-clr;
+    text-align: left;
+    margin-bottom: -10px;
+  }
+  .twitter-user__handle{
+    font-size: .9rem;
+   
+  }
+  .twitter-user__icon{
+  margin-left: 50px;
+  }
+  .tweet__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2em;
+    // justify-content: center;
+    width: min(600px, 100%);
+  }
+  .tweet__avater, .twitter-user__avater{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    
+  }
+  .twitter-user__avater{
+    background-color: #56CCF2;
+    margin-right: 10px;
+  }
+  .tweet__col-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
