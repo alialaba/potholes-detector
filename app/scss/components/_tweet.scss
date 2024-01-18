@@ -1,6 +1,11 @@
 .tweet {
 
   width: min(335px, 100%);
+ 
+    overflow: hidden;
+    // white-space: nowrap;
+    text-overflow: ellipsis;
+
   border-radius: 28.315px;
   border: 2.36px solid $brown-clr;
   padding: 1em;

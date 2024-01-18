@@ -123,61 +123,10 @@ input[type=range]:focus {
   margin: 0 auto;
 }
 
-.twitter-user {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 1em;
-}
-
-.twitter-user__head {
-  display: flex;
-  font-family: "Hind Siliguri", sans-serif;
-}
-
-.twitter-user__name {
-  font-size: 1.1rem;
-  color: #110F0F;
-  text-align: left;
-  margin-bottom: -10px;
-}
-
-.twitter-user__handle {
-  font-size: 0.9rem;
-}
-
-.twitter-user__icon {
-  margin-left: 50px;
-}
-
-.tweet__header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 2em;
-  width: min(600px, 100%);
-}
-
-.tweet__avater, .twitter-user__avater {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-}
-
-.twitter-user__avater {
-  background-color: #56CCF2;
-  margin-right: 10px;
-}
-
-.tweet__col-left {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
-}
-
 .tweet {
   width: min(335px, 100%);
+  overflow: hidden;
+  text-overflow: ellipsis;
   border-radius: 28.315px;
   border: 2.36px solid #110F0F;
   padding: 1em;
@@ -271,6 +220,58 @@ input[type=range]:focus {
   background-color: #110F0F;
   color: #fff;
   width: 100%;
+}
+
+.twitter-user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
+}
+
+.twitter-user__head {
+  display: flex;
+  font-family: "Hind Siliguri", sans-serif;
+}
+
+.twitter-user__name {
+  font-size: 1.1rem;
+  color: #110F0F;
+  text-align: left;
+  margin-bottom: -10px;
+}
+
+.twitter-user__handle {
+  font-size: 0.9rem;
+}
+
+.twitter-user__icon {
+  margin-left: 50px;
+}
+
+.tweet__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2em;
+  width: min(600px, 100%);
+}
+
+.tweet__avater, .twitter-user__avater {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.twitter-user__avater {
+  margin-right: 10px;
+}
+
+.tweet__col-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
 }
 
 .header {
@@ -937,7 +938,7 @@ input[type=range]:focus {
   justify-content: center;
   align-items: center;
   gap: 2em;
-  height: 440px;
+  height: 320px;
   /* hide scrollbar but allow scrolling */
   -ms-overflow-style: none; /* for Internet Explorer, Edge */
   scrollbar-width: none; /* for Firefox */

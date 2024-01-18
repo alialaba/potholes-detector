@@ -14,7 +14,7 @@ const timeline =[
     id:1,
     name: "AliBaba464",
     handle:"@baba464",
-    message: "Our website provides a simple and effective solution for reporting potholes 1",
+    message: "We are dedicated to addressing the common problem of potholes on our roads. Potholes not only damage vehicles but also pose a safety hazard for pedestrians.",
     color:  generateColor()
 },
 {

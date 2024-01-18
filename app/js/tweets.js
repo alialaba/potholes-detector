@@ -1,19 +1,16 @@
 import { timeline } from "./data.js";
 
+
+//Select Elements
 const usersTweets = document.querySelector(".experience__tweets");
+let experienceMessage = document.querySelector(".experience__message");
+let tweetUsername = document.querySelector(".twitter-user__name");
+let tweetHandle = document.querySelector(".twitter-user__handle");
+let tweetAvatar = document.querySelector(".twitter-user__avater");
 
 
-//generate Colors 
-// function generateColor(){
-//     let hexcodes = "0123456789ABCDEF";
-//     let color = "#";
-//     for(let i = 0; i < 6; i++){
-//         color += hexcodes[Math.floor(Math.random() * 16)]
-//     }
-//     return color;
-// }
 
-function displayUsersTweet(item){
+function displayUsersTweet(item, isFirstTweet){
 const userTweeter = document.createElement("article");
 let  userTweetOverlay  = document.createElement("div")
 const userTweet = document.createElement("div");
@@ -25,7 +22,7 @@ const userTweetName = document.createElement("p");
 const userTweetHandle = document.createElement("span")
 const userTweetIcon = document.createElement("i");
 const userTweetMessage = document.createElement("p");
-// console.log(timeline)
+
 
 //ClassNames
 userTweeter.className ="tweet";
@@ -42,17 +39,12 @@ userTweetMessage.className ="tweet__text";
 // Add event listener to userTweetOverlay
 userTweetOverlay.addEventListener("click", (event)=>{
 
-    //Select Elements
-   let experienceMessage = document.querySelector(".experience__message");
-   let tweetUsername = document.querySelector(".twitter-user__name");
-   let tweetHandle = document.querySelector(".twitter-user__handle");
-   let tweetAvatar = document.querySelector(".twitter-user__avater")
-    // console.log(experienceMessage);
-
     //target clicked element
     const clickedTweet = event.target;
     if(clickedTweet){
-        experienceMessage.textContent = item.message;
+        
+        experienceMessage.textContent = item.message.length > 140 ? `${item.message.substring(0, 140)}...` : item.message
+
         tweetUsername.textContent = item.name;
         tweetHandle.textContent = item.handle;
         tweetAvatar.style.backgroundColor = item.color;
@@ -60,14 +52,15 @@ userTweetOverlay.addEventListener("click", (event)=>{
 
     }
 
-
+    
 
 })
 
 //Add content
 userTweetName.textContent = item.name;
 userTweetHandle.textContent = item.handle;
-userTweetMessage.textContent = item.message;
+console.log(item.message.length )
+ userTweetMessage.textContent = item.message.length > 95 ?  `${item.message.substring(0,95)}...` : item.message;
 userTweetIcon.classList.add("fa-brands", "fa-twitter");
 //generate Color for avatars
 userTweetHeaderAvatar.style.backgroundColor = item.color;
@@ -87,10 +80,24 @@ userTweetwrapText.appendChild(userTweetHandle);
 userTweetHeader.appendChild(userTweetIcon);
 userTweet.appendChild(userTweetMessage)
 
+// If it's the first tweet, display its content in experience__preview initially
+
+if(isFirstTweet){
+     experienceMessage.textContent = item.message.length > 140 ? `${item.message.substring(0, 140)}...` : item.message
+    tweetUsername.textContent = item.name;
+    tweetHandle.textContent = item.handle;
+    tweetAvatar.style.backgroundColor = item.color;
+}
 
 }
 
-timeline.forEach((item)=> displayUsersTweet(item))
+
+// iterate over timeline array
+timeline.forEach((item, index)=> {
+    var isFirstTweet = index === 0;
+    
+    displayUsersTweet(item, isFirstTweet);
+})
 
 
 
