@@ -1,13 +1,11 @@
-@import "../base/mixins";
-@import "../base/variables";
+// @import "../base/mixins";
+// @import "../base/variables";
 .footer{
     border-top: 1px solid #110F0F;
 
 
     &__content{
         display: flex;
-        // row-gap: 20em;
-        // align-items: center;
         justify-content: space-between;
         flex-wrap: wrap;
         margin-bottom: 3em;
@@ -16,7 +14,7 @@
     }
     &__bottom{
         display: flex;
-        align-items: center;
+        // align-items: center;
         justify-content: space-between;
         flex-wrap: wrap;
         gap: 3em;
@@ -36,6 +34,9 @@
     &__list {
        
     }
+    &__link{
+        font-family: $font-hind;
+    }
     &__item{
         margin-bottom: 1em;
     }
@@ -47,10 +48,20 @@
     &__tag{
         background-color: $brown-clr;
         color: $white;
-        padding: .5em;
-        font-size: .8rem;
+        padding: .5em .8em;
+        font-size: .7rem;
         border-radius: 55.309px;
         margin-left: .8em;
+        font-family: $font-hind;
+    }
+    
+    &__mail{
+        font-family: $font-Bubblegum;
+        font-size: 1.2rem;
+    }
+    &__copyright{
+        font-family: $font-hind;
+        font-size: 1rem;
     }
 
 }

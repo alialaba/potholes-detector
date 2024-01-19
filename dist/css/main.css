@@ -213,6 +213,7 @@ input[type=range]:focus {
 
 .btn-help {
   border: 3px solid #110F0F;
+  display: inline-flex;
   color: #110F0F;
 }
 
@@ -436,7 +437,6 @@ input[type=range]:focus {
 }
 .footer__bottom {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 3em;
@@ -453,6 +453,9 @@ input[type=range]:focus {
     justify-content: start;
   }
 }
+.footer__link {
+  font-family: "Hind Siliguri", sans-serif;
+}
 .footer__item {
   margin-bottom: 1em;
 }
@@ -464,10 +467,19 @@ input[type=range]:focus {
 .footer__tag {
   background-color: #110F0F;
   color: #fff;
-  padding: 0.5em;
-  font-size: 0.8rem;
+  padding: 0.5em 0.8em;
+  font-size: 0.7rem;
   border-radius: 55.309px;
   margin-left: 0.8em;
+  font-family: "Hind Siliguri", sans-serif;
+}
+.footer__mail {
+  font-family: "Bubblegum Sans", cursive;
+  font-size: 1.2rem;
+}
+.footer__copyright {
+  font-family: "Hind Siliguri", sans-serif;
+  font-size: 1rem;
 }
 
 .container {

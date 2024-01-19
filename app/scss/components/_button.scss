@@ -31,6 +31,7 @@
 .btn-help{
     @extend .btn;
     border: 3px solid $brown-clr;
+    display: inline-flex;
     color:$brown-clr;
     //  position: relative;
     // &:hover{
