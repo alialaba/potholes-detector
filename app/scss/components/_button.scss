@@ -33,11 +33,18 @@
     border: 3px solid $brown-clr;
     display: inline-flex;
     color:$brown-clr;
-    //  position: relative;
-    // &:hover{
-    //     position: absolute;
-    //     background-color: red;
-    // }
+     position: relative;
+    &:hover + .help-chatbot{
+        display: block;
+        display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+    background-color: $brown-clr;
+    color: $white;
+    border-radius: 6px;
+    
+    }
 }
 .btn-pricing{
     @extend .btn;

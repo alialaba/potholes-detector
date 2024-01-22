@@ -11,6 +11,10 @@
         margin-bottom: 3em;
         width: 80%;
         gap: 5em;
+        
+    }
+    &__logo{
+        
     }
     &__bottom{
         display: flex;
@@ -18,8 +22,9 @@
         justify-content: space-between;
         flex-wrap: wrap;
         gap: 3em;
+        
     }
-    &__social{
+    &__social-list{
         display: flex;
         align-items: center;
         justify-content: center;
@@ -62,6 +67,9 @@
     &__copyright{
         font-family: $font-hind;
         font-size: 1rem;
+    }
+    &__help{
+       position: relative; 
     }
 
 }
