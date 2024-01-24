@@ -1061,7 +1061,7 @@ input[type=range]:focus {
 }
 @media (max-width: 540px) {
   .download__img {
-    min-height: 300px;
+    min-height: 370px;
   }
 }
 .download__img--left {
