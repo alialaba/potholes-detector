@@ -1043,6 +1043,7 @@ input[type=range]:focus {
   padding-top: 2em;
   width: 450px;
   background-color: #f2f2f2;
+  position: relative;
 }
 .download__col:hover .download__img--left {
   background-size: 90%;
@@ -1060,15 +1061,17 @@ input[type=range]:focus {
 }
 @media (max-width: 540px) {
   .download__img {
-    height: 300px;
+    min-height: 300px;
   }
 }
 .download__img--left {
   background-image: url(/images/mobile1.svg);
+  position: relative;
+  right: 25px;
+  bottom: 5px;
 }
 .download__img--right {
   background-image: url(/images/map-interface.svg);
-  z-index: -100;
 }
 .download__subtitle {
   text-align: center;
@@ -1088,4 +1091,142 @@ input[type=range]:focus {
 }
 .download__action > * + * {
   margin-left: 2em;
+}
+
+.pricing {
+  position: relative;
+}
+.pricing__content {
+  margin: 0 auto;
+  text-align: center;
+}
+.pricing__switch {
+  position: relative;
+  border-radius: 47px;
+  border: 1px solid #D9D9D9;
+  background: #EBEBEB;
+  display: inline-flex;
+  padding: 10px;
+  margin-top: 1em;
+  margin-bottom: 3em;
+}
+.pricing__switch [type=radio] {
+  position: absolute;
+  left: -9999px;
+}
+.pricing__switch [type=radio]:checked#monthly ~ label[for=monthly], .pricing__switch [type=radio]:checked#yearly ~ label[for=yearly] {
+  color: rgba(17, 15, 15, 0.6);
+}
+.pricing__switch [type=radio]:checked#monthly ~ label[for=monthly], .pricing__switch [type=radio]:checked#yearly ~ label[for=yearly] {
+  background: transparent;
+}
+.pricing__switch [type=radio]:checked#monthly + label[for=yearly] ~ .highlighter {
+  transform: none;
+}
+.pricing__switch [type=radio]:checked#yearly + label[for=monthly] ~ .highlighter {
+  transform: translateX(100%);
+}
+.pricing__switch label {
+  min-width: 100px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transition: color 0.25s ease-in-out;
+  font-size: 1rem;
+  border-radius: 24px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+.pricing__switch .highlighter {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  background: #fff;
+  transition: transform 0.25s ease-in-out;
+  width: calc(50% - 4px);
+  height: calc(100% - 8px);
+  border-radius: 30px;
+}
+.pricing__card .hide {
+  display: none;
+}
+.pricing__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1em;
+}
+.pricing__card {
+  flex-grow: 1;
+  flex-basis: 350px;
+  border: 5px solid #110F0F;
+  background: #F2F2F2;
+  padding: 0.8em 0.8em 3em 0.8em;
+  border-radius: 30px;
+  margin: 0 auto;
+}
+.pricing__heading {
+  padding: 1em;
+  margin-bottom: 1em;
+  border-radius: 11px;
+  border: 2px solid #110F0F;
+}
+.pricing__free {
+  background: linear-gradient(270deg, #CFD8E7 18.77%, rgba(242, 242, 242, 0) 101.21%);
+}
+.pricing__monthly {
+  background: linear-gradient(270deg, #B9C628 18.77%, rgba(242, 242, 242, 0) 101.21%);
+}
+.pricing__yearly {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(270deg, rgba(234, 159, 71, 0.96) 18.77%, rgba(242, 242, 242, 0) 101.21%);
+}
+.pricing__tag {
+  border-radius: 24px;
+  background: #FFF;
+  padding: 0.5em 1em;
+  font-size: 0.8rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.pricing__pro {
+  background-color: #D85912;
+  border-radius: 24px;
+  padding: 0.4em 0.8em;
+  font-size: 0.8rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.pricing__list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3em;
+  line-height: 1.9;
+  margin-right: 2em;
+}
+.pricing__item .fa-check {
+  color: #7E15D0;
+}
+.pricing__item i {
+  font-size: 0.9rem;
+}
+.pricing .pricing__item--text {
+  font-size: 0.9rem;
+}
+.pricing__btn {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  border-radius: 80px;
+  background: #110F0F;
+  color: #Fff;
+  width: 100%;
+  padding: 1em;
 }/*# sourceMappingURL=main.css.map */
