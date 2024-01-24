@@ -539,3 +539,115 @@
     }
       }
   
+
+      .download{
+        // position: relative;
+        &__subheading{
+             margin-bottom: 4em;
+            text-align: center;
+        }
+        &__title{
+            font-family: $font-Bubblegum;
+            font-size: 2.5rem;
+        }
+        &__row{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap:3rem;
+            width: min(1100px, 100%);
+            margin: 0 auto;
+            // overflow:auto;
+            position: relative;
+    
+    
+            @include for-desktop{
+                &::after{
+                    position: absolute;
+                    content: "";
+                    background-image: url(/images/hero-bg-right.svg);
+                    background-repeat: no-repeat;
+                    background-size: 100%;
+                    width: 90%;
+                    height: 100%;
+                    top: 100px;
+                    bottom: 0;
+                    left: 20%;
+                    right: 0;
+                    z-index: -90;
+        
+        
+                }
+            }
+            
+        }
+        &__col{
+            border-radius: 80px;
+            border: 5px solid $brown-clr;
+            padding-top: 2em;
+            // flex: 1 0 45%;
+            // height: 580px;
+            width: 450px;
+            // margin: 0 2rem;
+            background-color: #f2f2f2;
+            // z-index: 100;
+            
+            
+    
+            &:hover .download__img--left{
+                background-size: 90%;
+                
+               }
+               &:hover  .download__img--right{
+                background-size: 90%;
+                
+               }
+    
+            
+        }
+        &__img{
+            background-repeat: no-repeat;
+            background-position-x:  right;
+            background-position-y: bottom ;
+            background-size: 70%;
+            min-height: 430px;
+            // z-index: -100;
+            transition: .45s ease all; 
+            @include for-mobile{
+                height: 300px;
+            }
+
+        }
+        &__img--left{
+                background-image: url(/images/mobile1.svg);
+                    
+        }
+
+        &__img--right{
+            background-image: url(/images/map-interface.svg);
+            z-index: -100;
+        }
+
+        &__subtitle{
+            text-align: center;
+            font-size: 1.8rem;
+
+            @include for-tablet{
+                font-size: 1.4rem;
+            }
+            font-family: $font-Bubblegum;
+    
+        }
+        &__action{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 4em;
+        }
+    
+        &__action > * + *{
+            margin-left: 2em;
+         }
+    
+        
+    }

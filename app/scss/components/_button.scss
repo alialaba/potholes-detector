@@ -21,6 +21,8 @@
     border: 3px solid $brown-clr;
     color:$brown-clr;
     display: inline-flex;
+    gap: .5em;
+    align-items: center;
     font-family: $font-hind;
     font-weight: 600;
     &:hover{
