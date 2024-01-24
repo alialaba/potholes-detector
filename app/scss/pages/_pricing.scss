@@ -7,6 +7,17 @@
       margin:  0 auto;
       text-align: center;
     }
+    &__title{
+      font-family: $font-Bubblegum;
+      font-size: 2.5rem;
+      @include for-tablet{
+        font-size: 1.5rem;
+      }
+    }
+    &__text{
+      font-size: 1.125rem;
+      font-family: $font-hind;
+    }
     &__switch{
       position: relative;
       border-radius: 47px;
@@ -16,6 +27,9 @@
       padding: 10px;
       margin-top: 1em;
         margin-bottom: 3em;
+       @include for-tablet{
+       
+       }
        [type="radio"]{
         position: absolute;
         left: -9999px;
@@ -25,7 +39,8 @@
     }
     &__switch [type="radio"]:checked#monthly ~ label[for="monthly"],
     &__switch [type="radio"]:checked#yearly ~ label[for="yearly"]{
-     color: #110F0F99;
+     color: $brown-clr;
+     font-weight: 600;
     }
   
     &__switch [type="radio"]:checked#monthly ~ label[for="monthly"],
@@ -43,6 +58,7 @@
     &__switch label{
       min-width: 100px;
       display: inline-flex;
+      gap: .3em;
       justify-content: center;
       align-items: center;
       transition: color 0.25s ease-in-out;
@@ -52,6 +68,9 @@
       cursor: pointer;
       position: relative;
       z-index: 1;
+      font-family: $font-hind;
+      // font-weight: 600;
+      
     }
   
    &__switch .highlighter{
@@ -90,15 +109,30 @@
           margin-bottom:1em;
           border-radius: 11px;
           border: 2px solid #110F0F;
+          font-family: $font-hind;
+          & > * + *{
+            margin-top: .8em;
+          }
+          &--inner{
+            & > * + *{
+              margin-top: .8em;
+            }
+          }
       }
+
       &__free{
           
           background: linear-gradient(270deg, #CFD8E7 18.77%, rgba(242, 242, 242, 0.00) 101.21%);
+          
+
+          
       }
   
       &__monthly{
           
           background: linear-gradient(270deg, #B9C628 18.77%, rgba(242, 242, 242, 0.00) 101.21%);
+          
+
         }
       &__yearly{
         display: flex;
@@ -106,16 +140,25 @@
         align-items: center;
         
   background: linear-gradient(270deg, rgba(234, 159, 71, 0.96) 18.77%, rgba(242, 242, 242, 0.00) 101.21%);
-      }
+      
+}
       &__tag{
           border-radius: 24px;
           background: #FFF;
           padding:.5em 1em;
           font-size:.8rem;
           display: inline-flex;
+          gap: .4em;
           justify-content: center;
           align-items: center;
+          font-weight: 600;
           
+        }
+        &__subscription{
+          font-size: 1.4rem;
+        }
+        &__text{
+          font-size: 1rem;
         }
         &__pro{
           background-color: #D85912;
@@ -123,6 +166,7 @@
           padding:.4em .8em;
           font-size:.8rem;
           display: inline-flex;
+          gap: .4em;
           justify-content: center;
           align-items: center;
           color: #fff;
@@ -142,8 +186,10 @@
         &__item i{
           font-size:.9rem;
         }
-        .pricing__item--text{
-          font-size:.9rem;
+        &__item--text{
+          font-size:.945rem;
+          font-family: $font-hind;
+          
         }
         &__btn{
           appearance:none;

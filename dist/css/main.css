@@ -577,7 +577,7 @@ input[type=range]:focus {
 }
 @media (max-width: 944px) {
   .hero__text {
-    font-size: 1rem;
+    font-size: 1.125rem;
   }
 }
 .hero__diagram {
@@ -1100,6 +1100,19 @@ input[type=range]:focus {
   margin: 0 auto;
   text-align: center;
 }
+.pricing__title {
+  font-family: "Bubblegum Sans", cursive;
+  font-size: 2.5rem;
+}
+@media (max-width: 944px) {
+  .pricing__title {
+    font-size: 1.5rem;
+  }
+}
+.pricing__text {
+  font-size: 1.125rem;
+  font-family: "Hind Siliguri", sans-serif;
+}
 .pricing__switch {
   position: relative;
   border-radius: 47px;
@@ -1115,7 +1128,8 @@ input[type=range]:focus {
   left: -9999px;
 }
 .pricing__switch [type=radio]:checked#monthly ~ label[for=monthly], .pricing__switch [type=radio]:checked#yearly ~ label[for=yearly] {
-  color: rgba(17, 15, 15, 0.6);
+  color: #110F0F;
+  font-weight: 600;
 }
 .pricing__switch [type=radio]:checked#monthly ~ label[for=monthly], .pricing__switch [type=radio]:checked#yearly ~ label[for=yearly] {
   background: transparent;
@@ -1129,6 +1143,7 @@ input[type=range]:focus {
 .pricing__switch label {
   min-width: 100px;
   display: inline-flex;
+  gap: 0.3em;
   justify-content: center;
   align-items: center;
   transition: color 0.25s ease-in-out;
@@ -1137,6 +1152,7 @@ input[type=range]:focus {
   cursor: pointer;
   position: relative;
   z-index: 1;
+  font-family: "Hind Siliguri", sans-serif;
 }
 .pricing__switch .highlighter {
   position: absolute;
@@ -1171,6 +1187,13 @@ input[type=range]:focus {
   margin-bottom: 1em;
   border-radius: 11px;
   border: 2px solid #110F0F;
+  font-family: "Hind Siliguri", sans-serif;
+}
+.pricing__heading > * + * {
+  margin-top: 0.8em;
+}
+.pricing__heading--inner > * + * {
+  margin-top: 0.8em;
 }
 .pricing__free {
   background: linear-gradient(270deg, #CFD8E7 18.77%, rgba(242, 242, 242, 0) 101.21%);
@@ -1190,8 +1213,16 @@ input[type=range]:focus {
   padding: 0.5em 1em;
   font-size: 0.8rem;
   display: inline-flex;
+  gap: 0.4em;
   justify-content: center;
   align-items: center;
+  font-weight: 600;
+}
+.pricing__subscription {
+  font-size: 1.4rem;
+}
+.pricing__text {
+  font-size: 1rem;
 }
 .pricing__pro {
   background-color: #D85912;
@@ -1199,6 +1230,7 @@ input[type=range]:focus {
   padding: 0.4em 0.8em;
   font-size: 0.8rem;
   display: inline-flex;
+  gap: 0.4em;
   justify-content: center;
   align-items: center;
   color: #fff;
@@ -1216,8 +1248,9 @@ input[type=range]:focus {
 .pricing__item i {
   font-size: 0.9rem;
 }
-.pricing .pricing__item--text {
-  font-size: 0.9rem;
+.pricing__item--text {
+  font-size: 0.945rem;
+  font-family: "Hind Siliguri", sans-serif;
 }
 .pricing__btn {
   -webkit-appearance: none;
