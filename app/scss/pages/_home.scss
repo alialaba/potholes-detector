@@ -430,29 +430,9 @@
     &__action-group > * + *{
        margin-left: 2em;
     }
-    &__brands{
-        display: flex; 
-        flex-wrap: wrap; 
-        gap: 3em;
-        width: min(900px, 85%);
-        margin: 0 auto;
-    }
-    &__brand{
-        border-radius: 16.606px;
-        border: 4.152px solid $brown-clr;
-        padding: .4em;
-
-        @include keyframes (moving-logos) {
-            0% {
-                transform: translateX(50%);
-            }
-            100% {
-                transform: translateX(-50%);
-            }
-        }
-        @include animation('moving-logos 10s infinite');
-
-    }
+    
+    
+           
 }
 
 
