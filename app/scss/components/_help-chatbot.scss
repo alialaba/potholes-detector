@@ -4,17 +4,9 @@
     bottom: 100px;
     left: -100px;
     padding: 1rem;
-    &::before{
-        position: absolute;
-        content: "";
-        right: 10px;
-        bottom: -15px;
-        height: 20px;
-        width: 20px;
-        background-color: $brown-clr;
-        border-radius:  20px 20px 300px 300px;
 
-    }
+    
+    
 
     &__avatar{
         width: 35px;
@@ -24,6 +16,14 @@
     }
     &__name{
         font-family: $font-Bubblegum;
+    }
+    &__bubble{
+//         width: 0;
+//         height: 0;
+//         border-left: 0 solid transparent;
+//   border-right: 20px solid transparent;
+//   border-top: 20px solid #efefef;
+//   margin: 0 0 0 60px;
     }
     
 }
