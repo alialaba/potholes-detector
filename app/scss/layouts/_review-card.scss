@@ -35,7 +35,7 @@
                 transform: rotate(360deg);
             }
         }
-        @include animation('rotate-avatar 5s infinite linear');
+        @include animation('rotate-avatar 25s infinite linear');
 
     }
     

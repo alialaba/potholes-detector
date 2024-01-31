@@ -587,7 +587,7 @@ input[type=range]:focus {
   border-radius: 50%;
   width: 60px;
   height: 60px;
-  animation: rotate-avatar 5s infinite linear;
+  animation: rotate-avatar 25s infinite linear;
 }
 @keyframes rotate-avatar {
   from {
