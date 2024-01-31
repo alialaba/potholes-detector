@@ -1,0 +1,59 @@
+.review{
+    &__card{
+        border: 1px solid $brown-clr;
+        padding: 2em;
+        border-radius: 30px;
+
+        & > * + *{
+            margin-top: 3em;
+        }
+        
+    }
+    &__message{
+        // padding: 1em;
+        font-family: $font-hind;
+        font-size: 1.1rem;
+    }
+    &__footer{
+        display: flex;
+        gap: 1em;
+        align-items: center;
+        // background-color: $brown-clr;
+        // padding: 1em;
+    }
+    &__avatar{
+        border: 3px dotted $brown-clr;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+
+        @include keyframes(rotate-avatar){
+            from{
+             transform: rotate(0);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+        @include animation('rotate-avatar 5s infinite linear');
+
+    }
+    
+    &__info{
+        display: flex;
+        flex-direction: column;
+
+        & span:nth-child(1){
+            font-family:$font-Bubblegum;
+            font-size: 1.2rem;
+            margin-bottom: -5px;
+        }
+        & span:nth-child(2){
+            font-family:$font-hind;
+            font-size: 1rem;
+            
+        }
+    }
+
+
+}

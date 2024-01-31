@@ -565,6 +565,52 @@ input[type=range]:focus {
   position: relative;
 }
 
+.review__card {
+  border: 1px solid #110F0F;
+  padding: 2em;
+  border-radius: 30px;
+}
+.review__card > * + * {
+  margin-top: 3em;
+}
+.review__message {
+  font-family: "Hind Siliguri", sans-serif;
+  font-size: 1.1rem;
+}
+.review__footer {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}
+.review__avatar {
+  border: 3px dotted #110F0F;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: rotate-avatar 5s infinite linear;
+}
+@keyframes rotate-avatar {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.review__info {
+  display: flex;
+  flex-direction: column;
+}
+.review__info span:nth-child(1) {
+  font-family: "Bubblegum Sans", cursive;
+  font-size: 1.2rem;
+  margin-bottom: -5px;
+}
+.review__info span:nth-child(2) {
+  font-family: "Hind Siliguri", sans-serif;
+  font-size: 1rem;
+}
+
 .container {
   margin: 0 auto;
   width: min(1200px, 90%);
@@ -1116,8 +1162,8 @@ input[type=range]:focus {
   position: relative;
 }
 .pricing__content {
-  margin: 0 auto;
   text-align: center;
+  margin-bottom: 3.5em;
 }
 .pricing__title {
   font-family: "Bubblegum Sans", cursive;
@@ -1281,4 +1327,14 @@ input[type=range]:focus {
   color: #Fff;
   width: 100%;
   padding: 1em;
+}
+
+.review__list {
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+}
+.review__title {
+  font-family: "Bubblegum Sans", cursive;
+  font-size: 2.5rem;
 }/*# sourceMappingURL=main.css.map */
