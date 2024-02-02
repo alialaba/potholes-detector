@@ -573,6 +573,14 @@ input[type=range]:focus {
 .review__card > * + * {
   margin-top: 3em;
 }
+.review__img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 0 auto;
+  border: 3px dotted #110F0F;
+  padding: 0.2em;
+}
 .review__message {
   font-family: "Hind Siliguri", sans-serif;
   font-size: 1.1rem;
@@ -583,10 +591,6 @@ input[type=range]:focus {
   align-items: center;
 }
 .review__avatar {
-  border: 3px dotted #110F0F;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
   animation: rotate-avatar 25s infinite linear;
 }
 @keyframes rotate-avatar {
@@ -1331,8 +1335,14 @@ input[type=range]:focus {
 
 .review__list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   gap: 2em;
+  margin-top: 3em;
+}
+.review__item {
+  flex-grow: 1;
+  flex-basis: 300px;
 }
 .review__title {
   font-family: "Bubblegum Sans", cursive;

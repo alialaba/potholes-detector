@@ -85,49 +85,49 @@ const reviews =[
         id:1,
         message: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic dolor enim ullam fugit labore ipsa. Aliquam nam cupiditate eos nostrum ex ipsam sit pariatur soluta eveniet quam, animi vel omnis.",
         name: "Adam Waxman",
-        career:"Designer vx"
+        career:"Designer vx",
+        imgSrc: "https://i.ibb.co/tBS3Zxn/ives.jpg"
 
     },
     {
         id:2,
         message: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic dolor enim ullam fugit labore ipsa. Aliquam nam cupiditate eos nostrum ex ipsam sit pariatur soluta eveniet quam, animi vel omnis.",
         name: "Adam Waxman",
-        career:"Designer vx"
+        career:"Designer vx",
+        imgSrc: "https://i.ibb.co/tBS3Zxn/ives.jpg"
 
     },
     {
         id:3,
         message: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic dolor enim ullam fugit labore ipsa. Aliquam nam cupiditate eos nostrum ex ipsam sit pariatur soluta eveniet quam, animi vel omnis.",
         name: "Adam Waxman",
-        career:"Designer vx"
+        career:"Designer vx",
+        imgSrc: "https://i.ibb.co/tBS3Zxn/ives.jpg"
 
     },
     {
         id:4,
         message: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic dolor enim ullam fugit labore ipsa. Aliquam nam cupiditate eos nostrum ex ipsam sit pariatur soluta eveniet quam, animi vel omnis.",
         name: "Adam Waxman",
-        career:"Designer vx"
+        career:"Designer vx",
+        imgSrc: "https://i.ibb.co/tBS3Zxn/ives.jpg"
 
     },
     {
-        id:4,
-        message: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic dolor enim ullam fugit labore ipsa. Aliquam nam cupiditate eos nostrum ex ipsam sit pariatur soluta eveniet quam, animi vel omnis.",
-        name: "Adam Waxman",
-        career:"Designer vx"
-
-    },
-    {
+        
         id:5,
         message: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic dolor enim ullam fugit labore ipsa. Aliquam nam cupiditate eos nostrum ex ipsam sit pariatur soluta eveniet quam, animi vel omnis.",
         name: "Adam Waxman",
-        career:"Designer vx"
+        career:"Designer vx",
+        imgSrc: "https://i.ibb.co/tBS3Zxn/ives.jpg"
 
     },
     {
         id:6,
         message: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic dolor enim ullam fugit labore ipsa. Aliquam nam cupiditate eos nostrum ex ipsam sit pariatur soluta eveniet quam, animi vel omnis.",
         name: "Adam Waxman",
-        career:"Designer vx"
+        career:"Designer vx",
+        imgSrc: "https://i.ibb.co/tBS3Zxn/ives.jpg"
 
     }
 ]
