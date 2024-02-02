@@ -13,9 +13,12 @@ function showReviews (item){
     let reviewFooter = document.createElement("div");
     let reviewAvatar = document.createElement("div");
     let reviewImg = document.createElement("img");
+    let reviewAvatarBorder = document.createElement("div")
     let reviewInfo = document.createElement("p");
     let reviewName = document.createElement("span");
     let reviewCareer = document.createElement("span");
+    let reviewBlockquote = document.createElement("blockquote");
+
 
 
 
@@ -27,8 +30,7 @@ function showReviews (item){
      reviewImg.src = item.imgSrc;
 
 
-    //Assign classnames;
-    
+    //Assign classnames;    
     reviewItem.className = "review__item";
     reviewCard.className = "review__card";
     reviewMsg.className ="review__message";
@@ -36,16 +38,21 @@ function showReviews (item){
     reviewFooter.className = "review__footer";
     reviewInfo.className = "review__info";
     reviewImg.className = "review__img";
+    reviewAvatarBorder.className ="review__avatar-border"
  
     //Append Elements to children
-    reviewInfo.appendChild(reviewCareer)
-    reviewInfo.appendChild(reviewName)
-    reviewAvatar.appendChild(reviewImg)
-    reviewFooter.appendChild(reviewAvatar)
-    reviewFooter.appendChild(reviewInfo)
-    reviewCard.appendChild(reviewMsg)
-    reviewCard.appendChild(reviewFooter)
-    reviewItem.appendChild(reviewCard)
+    reviewInfo.appendChild(reviewCareer);
+    reviewInfo.appendChild(reviewName);
+    reviewAvatar.appendChild(reviewAvatarBorder)
+    reviewAvatar.appendChild(reviewImg);
+
+    reviewFooter.appendChild(reviewAvatar);
+
+    reviewFooter.appendChild(reviewInfo);
+    reviewBlockquote.appendChild(reviewMsg);
+    reviewCard.appendChild(reviewBlockquote);
+    reviewCard.appendChild(reviewFooter);
+    reviewItem.appendChild(reviewCard);
     reviewList.appendChild(reviewItem);
 
    

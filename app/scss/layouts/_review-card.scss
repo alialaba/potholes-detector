@@ -10,14 +10,7 @@
         }
         
     }
-    &__img{
-        width: 60px;
-        height: 60px;
-        border-radius: 50%;
-        margin: 0 auto;
-        border: 3px dotted $brown-clr;
-        padding: .2em;
-    }
+    
     &__message{
         // padding: 1em;
         font-family: $font-hind;
@@ -30,23 +23,48 @@
         // background-color: $brown-clr;
         // padding: 1em;
     }
-    &__avatar{
-        // border: 3px dotted $brown-clr;
-        // border-radius: 50%;
-        // width: 65px;
-        // height: 65px;
-
-        @include keyframes(rotate-avatar){
-            from{
-             transform: rotate(0);
+    blockquote:before {
+    color: $brown-clr;
+    content: open-quote;
+    font-size: 4rem;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+    font-family: $font-Bubblegum;
+  }
+    &__avatar {
+        position: relative;
+        // Define the keyframes for rotating the border
+        @keyframes rotate-border {
+            from {
+                transform: rotate(0deg);
             }
-            to{
+            to {
                 transform: rotate(360deg);
             }
         }
-        @include animation('rotate-avatar 25s infinite linear');
-
     }
+
+    &__avatar-border {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 65px;
+        height: 65px;
+        border-radius: 50%;
+        border: 3px dotted $brown-clr;
+        animation: rotate-border 25s infinite linear;
+    }
+
+    &__img {
+        width: 65px;
+        height: 65px;
+        border-radius: 50%;
+        margin: 0 auto;
+        padding: .4em;
+    }
+
+    
     
     &__info{
         display: flex;
@@ -66,3 +84,9 @@
 
 
 }
+
+
+
+//   blockquote, q {
+//     quotes: "\201C""\201D""\2018""\2019";
+//   }
