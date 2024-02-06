@@ -246,7 +246,17 @@
     
   }
 
-  .accordion__list{
-    width: min(550px, 90%);
-    margin: 0 auto;
+
+  .accordion{
+
+    &__list{
+      width: min(550px, 90%);
+      margin: 0 auto;
+    }
+
+    &__title{
+      font-family: $font-Bubblegum;
+      font-size: 2.5rem;
+    }
   }
+  

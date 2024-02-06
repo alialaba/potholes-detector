@@ -254,9 +254,14 @@ input[type=range]:focus {
 }
 .accordion__item {
   background-color: #fff;
-  padding: 0.5em 1.2em;
+  padding: 0.7em 1.4em;
   border-radius: 6px;
   border: 1px solid #ccc;
+  margin-top: 1.2em;
+}
+.accordion__item.active .accordion__content {
+  height: 50px;
+  margin: 1em 0;
 }
 .accordion__header {
   display: flex;
@@ -266,6 +271,7 @@ input[type=range]:focus {
 .accordion__heading {
   font-family: "Hind Siliguri", sans-serif;
   font-size: 1.1rem;
+  font-weight: 600;
 }
 .accordion__content {
   height: 0;
@@ -1398,4 +1404,8 @@ input[type=range]:focus {
 .accordion__list {
   width: min(550px, 90%);
   margin: 0 auto;
+}
+.accordion__title {
+  font-family: "Bubblegum Sans", cursive;
+  font-size: 2.5rem;
 }/*# sourceMappingURL=main.css.map */
