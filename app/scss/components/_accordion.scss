@@ -1,0 +1,31 @@
+.accordion{
+    &__item{
+        background-color: $white;
+        padding: .5em 1.2em;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+    }
+    &__header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__heading{
+        font-family: $font-hind;
+        font-size: 1.1rem;
+    }
+
+    &__content{
+        height: 0;
+        overflow: hidden;
+        // margin-top: -1em;
+    }
+    &__paragraph{
+        font-family: $font-hind;
+    }
+    &__icon{
+        font-size: 1.6rem;
+        cursor: pointer;
+        font-weight: 700;
+    }
+}
