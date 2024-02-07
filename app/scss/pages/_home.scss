@@ -251,7 +251,7 @@
     &__title{
         text-align: center;
         font-family: $font-Bubblegum;
-        font-size: 2.5rem;
+        font-size: 2.2rem;
     }
     &__content{
         flex: 1 0 49%;
@@ -395,7 +395,7 @@
 .platform{
     &__title{
         font-family: $font-Bubblegum;
-        font-size: 2.5rem;    
+        font-size: 2.2rem;    
     }
     &__action{
         display: flex;
@@ -409,7 +409,7 @@
         @include for-mobile{
            justify-content: center;
            text-align: center;
-           padding-top: 2.5rem;
+           padding-top: 2.2rem;
         }
         
     }
@@ -449,7 +449,7 @@
       border-radius: 80px;
     &__title{
       font-family: $font-Bubblegum;
-      font-size: 2.5rem;  
+      font-size: 2.2rem;  
       
     }
     &__headline{
@@ -528,7 +528,7 @@
         }
         &__title{
             font-family: $font-Bubblegum;
-            font-size: 2.5rem;
+            font-size: 2.2rem;
         }
         &__row{
             display: flex;

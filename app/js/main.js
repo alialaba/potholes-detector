@@ -76,5 +76,10 @@ showcaseFeedback.addEventListener("click", ()=>{
 
 
 
+/*************************/
 
+/***Duplicate slider logo container****/
+const copySlider = document.querySelector(".logos__slide").cloneNode;
+
+/***********************/
 

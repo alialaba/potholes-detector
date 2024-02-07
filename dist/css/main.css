@@ -121,6 +121,7 @@ input[type=range]:focus {
 .headline {
   text-align: center;
   margin: 0 auto;
+  line-height: 1.2;
 }
 
 .tweet {
@@ -240,18 +241,32 @@ input[type=range]:focus {
   display: none;
   position: absolute;
   bottom: 100px;
+  width: auto;
   left: -100px;
-  padding: 1rem;
+  padding: 0.8rem;
+  height: auto;
+}
+@media (max-width: 540px) {
+  .help-chatbot {
+    left: 10px;
+    width: 220px;
+    bottom: 80px;
+  }
 }
 .help-chatbot__avatar {
   width: 35px;
   height: 35px;
   border-radius: 50%;
-  background-color: red;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), blue);
 }
 .help-chatbot__name {
   font-family: "Bubblegum Sans", cursive;
 }
+.help-chatbot__online {
+  font-family: "Hind Siliguri", sans-serif;
+  font-weight: 300;
+}
+
 .accordion__item {
   background-color: #fff;
   padding: 0.7em 1.4em;
@@ -502,7 +517,6 @@ input[type=range]:focus {
   top: 0;
   width: 250px;
   height: 100%;
-  background: linear-gradient(to left, rgba(255, 255, 255, 0), #fff);
   content: "";
   z-index: 2;
 }
@@ -513,13 +527,12 @@ input[type=range]:focus {
   width: 250px;
   height: 100%;
   right: 0;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0), #fff);
   content: "";
   z-index: 2;
 }
 .logos__slide {
   white-space: nowrap;
-  animation: slide-logos 5s infinite linear;
+  animation: slide-logos 15s infinite linear;
 }
 @keyframes slide-logos {
   from {
@@ -884,7 +897,7 @@ input[type=range]:focus {
 .showcase__title {
   text-align: center;
   font-family: "Bubblegum Sans", cursive;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
 }
 .showcase__content {
   flex: 1 0 49%;
@@ -1012,7 +1025,7 @@ input[type=range]:focus {
 /****************************/
 .platform__title {
   font-family: "Bubblegum Sans", cursive;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
 }
 .platform__action {
   display: flex;
@@ -1027,7 +1040,7 @@ input[type=range]:focus {
   .platform__action {
     justify-content: center;
     text-align: center;
-    padding-top: 2.5rem;
+    padding-top: 2.2rem;
   }
 }
 .platform__action-group {
@@ -1057,7 +1070,7 @@ input[type=range]:focus {
 }
 .experience__title {
   font-family: "Bubblegum Sans", cursive;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
 }
 .experience__headline {
   width: min(500px, 100%);
@@ -1131,7 +1144,7 @@ input[type=range]:focus {
 }
 .download__title {
   font-family: "Bubblegum Sans", cursive;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
 }
 .download__row {
   display: flex;
@@ -1223,7 +1236,7 @@ input[type=range]:focus {
 }
 .pricing__title {
   font-family: "Bubblegum Sans", cursive;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
 }
 @media (max-width: 944px) {
   .pricing__title {
@@ -1398,7 +1411,7 @@ input[type=range]:focus {
 }
 .review__title {
   font-family: "Bubblegum Sans", cursive;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
 }
 
 .accordion__list {
@@ -1407,5 +1420,5 @@ input[type=range]:focus {
 }
 .accordion__title {
   font-family: "Bubblegum Sans", cursive;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
 }/*# sourceMappingURL=main.css.map */

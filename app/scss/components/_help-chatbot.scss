@@ -2,28 +2,35 @@
     display: none;
     position: absolute;
     bottom: 100px;
+    width: auto;
     left: -100px;
-    padding: 1rem;
+    @include for-mobile{
+        left: 10px;
+        width: 220px;
+        bottom: 80px;
 
-    
-    
+    }
+    padding: .8rem;
+    height: auto;    
 
     &__avatar{
         width: 35px;
         height: 35px;
         border-radius: 50%;
-        background-color: red;
+        background: linear-gradient(to right, rgba(255, 255, 255, 0), blue);
     }
     &__name{
         font-family: $font-Bubblegum;
     }
-    &__bubble{
-//         width: 0;
-//         height: 0;
-//         border-left: 0 solid transparent;
-//   border-right: 20px solid transparent;
-//   border-top: 20px solid #efefef;
-//   margin: 0 0 0 60px;
+    &__online{
+        font-family: $font-hind;
+        font-weight: 300;
     }
     
+    
 }
+
+// .help-bubble{
+//     position: absolute;
+//     content: "hello";
+// }
