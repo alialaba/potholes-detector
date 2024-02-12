@@ -502,6 +502,10 @@ input[type=range]:focus {
   }
 }
 
+.nav__active {
+  color: red;
+}
+
 .logos {
   overflow: hidden;
   white-space: nowrap;
@@ -1421,4 +1425,39 @@ input[type=range]:focus {
 .accordion__title {
   font-family: "Bubblegum Sans", cursive;
   font-size: 2.2rem;
+}
+
+.company {
+  position: relative;
+}
+.company__content {
+  text-align: center;
+  width: min(500px, 90%);
+  margin: 0 auto;
+}
+.company__title {
+  z-index: 200px;
+  font-family: "Bubblegum Sans", cursive;
+  font-size: 2.2rem;
+}
+@media (max-width: 944px) {
+  .company__title {
+    font-size: 1.8rem;
+  }
+}
+.company__text {
+  font-family: "Hind Siliguri", sans-serif;
+}
+
+.circle {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: min(500px, 90%);
+  height: 50px;
+  background: linear-gradient(to bottom, #fa39ad 40%, #7E15D0 50%);
+  filter: blur(120px);
 }/*# sourceMappingURL=main.css.map */

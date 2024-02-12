@@ -78,8 +78,17 @@ showcaseFeedback.addEventListener("click", ()=>{
 
 /*************************/
 
-/***Duplicate slider logo container****/
-const copySlider = document.querySelector(".logos__slide").cloneNode;
+/***Make Nav Link Active For Each Page ****/
+const navLinkEls = document.querySelectorAll(".nav__link");
+const wdPathname = window.location.pathname;
+
+navLinkEls.forEach(navLinkEl=>{
+  if(navLinkEl.href.includes(wdPathname)){
+    navLinkEl.classList.add("nav__active")
+  }
+  console.log(navLinkEl)
+})
+console.log(navLinkEls)
 
 /***********************/
 

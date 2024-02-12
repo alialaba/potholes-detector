@@ -124,7 +124,11 @@
         
             }
 
+           
            }
+
+            
+    
 
 
            &--secondary{
@@ -213,6 +217,13 @@
 
 
 
+//indicate the page
+.nav__active{
+    // color: $white;
+    color: red;
+        // transition: all 0.3s;
+        // background-color: $brown-clr;
 
+}
 
 
