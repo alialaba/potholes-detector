@@ -1427,10 +1427,8 @@ input[type=range]:focus {
   font-size: 2.2rem;
 }
 
-.company {
-  position: relative;
-}
 .company__content {
+  position: relative;
   text-align: center;
   width: min(500px, 90%);
   margin: 0 auto;
@@ -1447,6 +1445,41 @@ input[type=range]:focus {
 }
 .company__text {
   font-family: "Hind Siliguri", sans-serif;
+}
+.company__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2em;
+  margin-top: 4em;
+}
+.company__column {
+  padding: 2em;
+  border: 2px solid #110F0F;
+  border-radius: 10px;
+  flex: 1 0 350px;
+  font-family: "Hind Siliguri", sans-serif;
+}
+.company__column--vision {
+  background-color: #CFD8E7;
+}
+.company__column--mission {
+  background-color: #7E15D0;
+  color: #fff;
+}
+.company__img {
+  width: 60%;
+  margin: 0 auto;
+}
+.company__tag {
+  background-color: #110F0F;
+  color: #fff;
+  border-radius: 100px;
+  padding: 0.5em 1em;
+  font-size: 0.9rem;
+}
+.company__comment {
+  line-height: 1.8;
 }
 
 .circle {

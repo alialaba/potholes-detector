@@ -1,6 +1,7 @@
 .company{
-    position: relative;
+   
     &__content{
+        position: relative;
         text-align: center;
         width: min(500px, 90%);
         margin: 0 auto;
@@ -18,6 +19,43 @@
     }
     &__text{
         font-family: $font-hind;
+    }
+    &__row{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 2em;
+        margin-top: 4em;
+
+    }
+
+    &__column{
+        padding: 2em;
+        border: 2px solid $brown-clr;
+        border-radius: 10px;
+        flex: 1 0 350px;
+        font-family: $font-hind;
+        &--vision{
+            background-color: #CFD8E7;
+        }
+        &--mission{
+            background-color: #7E15D0;
+            color: $white;
+        }
+    }
+    &__img{
+        width: 60%;
+        margin: 0 auto;
+    }
+    &__tag{
+        background-color: $brown-clr;
+        color: $white;
+        border-radius: 100px;
+        padding: .5em 1em;
+        font-size: .9rem;
+    }
+    &__comment{
+        line-height: 1.8;
     }
 }
 
