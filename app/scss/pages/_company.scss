@@ -10,7 +10,7 @@
         
     }
     &__title{
-        z-index: 200px;
+       
         font-family: $font-Bubblegum;
         font-size: 2.2rem;
         @include for-tablet{
@@ -56,6 +56,91 @@
     }
     &__comment{
         line-height: 1.8;
+    }
+}
+
+
+.approach{
+    &__title{
+        
+        font-family: $font-Bubblegum;
+        font-size: 2.2rem;
+        @include for-tablet{
+          font-size: 1.8rem;
+        }
+    }
+
+    &__row{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        // grid-column-gap: 10px;
+        grid-gap: 3em;
+        margin-top: 3em;
+
+        @include for-tablet{
+            grid-template-columns: 1fr;
+        }
+    }
+    &__column{
+        
+        background-color: #EBEBEB;
+        border: 2px solid $brown-clr;
+        border-radius: 10px;
+        padding: 2em;
+        font-family: $font-hind;
+
+        &-inner{
+           
+
+            &--content{
+                flex: 0 0 60%;
+            }
+            &--img{
+                flex: 0 0 40%;
+                & img{
+                    max-width: 60%;
+                    margin: 0 auto;
+                    height: 240px;
+                }
+            }
+
+            @include for-tablet{
+                flex: 0 0 350px;
+            }
+        }
+        &--full{
+            grid-column: 1 / span 2;
+            display: flex;
+            flex-wrap: wrap;
+            
+
+            @include for-tablet{
+                grid-column: span 1;
+            }
+
+        }
+        &--second, &--third{
+            grid-column: span 1;
+        }
+    }
+    &__text{
+        font-size: 1.1rem;
+        line-height: 1.7;
+    }
+
+    &__tag{
+        background-color: $white;
+        color: $brown-clr;
+        border-radius: 100px;
+        font-size: .9rem;
+        padding: .4em .8em;
+        margin-top: 5em;
+
+        @include for-tablet{
+            margin-top: 3em;
+        }
+        display: inline-block;
     }
 }
 
