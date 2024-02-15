@@ -145,3 +145,15 @@ input[type="range"]:focus::-moz-range-thumb {
   line-height: 1.2;
 }
 
+.lg-circle{
+  position: absolute;
+  right: 0;
+left: 0;
+top: 0;
+bottom: 0;
+margin: auto;
+  width: min(500px, 90%);
+  height: 50px;
+  background: linear-gradient(to bottom, #fa39ad 40%, #7E15D0 50%);
+  filter: blur(120px);
+}
