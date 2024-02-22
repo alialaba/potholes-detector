@@ -1,0 +1,13 @@
+.subscribe{
+    &__title{       
+        font-family: $font-Bubblegum;
+        font-size: 2.2rem;
+        @include for-tablet{
+          font-size: 1.8rem;
+        }
+    }
+    &__form{
+        margin-top: 1.5em;
+    }
+
+}

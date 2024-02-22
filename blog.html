@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="/app/scss/main.css"> -->
+    <link rel="stylesheet" href="/dist/css/main.css" />
+    <!-- FONT AWESOME -->
+  <script src="https://kit.fontawesome.com/3cf147ed19.js" crossorigin="anonymous"></script>
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> -->
+
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__nav-wrapper">
+          <a href="/index.html" class="header__logo">
+            <img src="/images/logo.svg" alt="brand logo" />
+            <!-- <span>Rutole</span> -->
+          </a>
+          <button
+            class="nav-toggle hamburger"
+            aria-controls="open-navigation"
+            aria-expanded="false"
+          >
+            <!-- <span class="visually-hidden">Menu</span> -->
+            <span class="bar" aria-hidden="true"></span>
+            <span class="bar" aria-hidden="true"></span>
+            <span class="bar" aria-hidden="true"></span>
+          </button>
+          <nav class="nav">
+            <ul class="nav__list nav__list--primary">
+              <li class="nav__item--primary">
+                <a href="/pricing.html" class="nav__link nav__link--primary">PRICING</a>
+              </li>
+              <li class="nav__item--primary">
+                <a href="/company.html" class="nav__link nav__link--primary">COMPANY</a>
+              </li>
+              <li class="nav__item--primary">
+                <a href="/blog.html" class="nav__link nav__link--primary">BLOG</a>
+              </li>
+            </ul>
+            <ul class="nav__list nav__list--secondary">
+              <li class="nav__item--secondary">
+                <a href="#" class="nav__link nav__link--secondary">LOGIN</a>
+              </li>
+              <li class="nav__item--secondary">
+                <a
+                  href="#"
+                  class="nav__link nav__link--secondary nav__link--btn"
+                  >Get started</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="container">
+                <div class="subscribe">
+                    <div class="headline">
+                        <h2 class="subscribe__title">Subscribe to our newsletter</h2>
+                    <p class="subscribe__text">Stay up to date with the latest blog update, news and trends.</p>
+                    <div class="subscribe__form">
+                        <input type="email" class="input input-email" placeholder="Email"/>
+                        <button class="btn btn-bg">Subscribe</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+      
+      
+    </main>
+
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+           <div class="footer__logo">
+            <img src="/images/logo.svg" alt="brand logo">
+           </div>
+           <ul class="footer__list">
+            <p class="footer__subtitle">Pricing</p>
+            <li class="footer__item"><a class="footer__link">New Features</a> <span class="footer__tag"><i class="fa-solid fa-star"></i> New</span></li>
+           </ul>
+           <ul class="footer__list">
+            <p class="footer__subtitle">Company</p>
+            <li class="footer__item"><a class="footer__link">About</a></li>
+            <li class="footer__item"><a class="footer__link">Career</a></li>
+           </ul>
+           <ul class="footer__list">
+            <p class="footer__subtitle">Blog</p>
+            <li class="footer__item"><a class="footer__link">History</a></li>
+           </ul>
+           
+        </div>
+        <div class="footer__bottom">
+          <p class="footer__copyright">&copy; 2023 Rutole Inc.</p>
+          <div class="footer__social">
+            <p class="footer__mail">Email: rutoledev@gmail.com</p>
+            <ul class="footer__social-list">
+              <li class="footer__social-item"><a href="#"><img src="/images/facebook.svg" alt="facebook"/></a></li>
+              <li class="footer__social-item"><a href="#"><img src="/images/be.svg" alt="be"/></a></li>
+              <li class="footer__social-item"><a href="#"><img src="/images/dribbble.svg" alt="dribbble"/></a></li>
+              <li class="footer__social-item"><a href="#"><img src="/images/google.svg" alt="google"/></a></li>
+
+            </ul>
+          </div>
+           <div class="footer__help">
+            <button class=" btn-help">
+              <img src="/images/messages.svg" alt="message icon"/>
+              
+              Help
+          </button>
+
+          <!-- <div> -->
+          <div class="help-chatbot">
+            <div class="help-chatbot__avatar"></div>
+            <h3 class="help-chatbot__name">Bot rutole</h3>
+            <p class="help-chatbot__online">online</p>
+            <!-- <div class="help-chatbot__bubble"></div> -->
+          </div>
+        <!-- </div> -->
+          
+
+           </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./app/js/main.js"></script>
+    <script type="module"  src="./app/js/tweets.js"></script>
+  </body>
+</html>

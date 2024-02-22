@@ -314,6 +314,19 @@ input[type=range]:focus {
   font-weight: 700;
 }
 
+.input, .input-email {
+  outline: none;
+  padding: 0.5em 1em;
+  background: none;
+}
+
+.input-email {
+  border-radius: 50px;
+  line-height: 1.9;
+  font-family: "Hind Siliguri", sans-serif;
+  font-size: 0.9rem;
+}
+
 .twitter-user {
   display: flex;
   justify-content: center;
@@ -1587,4 +1600,16 @@ input[type=range]:focus {
 }
 .join-us__column {
   flex: 0 1 500px;
+}
+.subscribe__title {
+  font-family: "Bubblegum Sans", cursive;
+  font-size: 2.2rem;
+}
+@media (max-width: 944px) {
+  .subscribe__title {
+    font-size: 1.8rem;
+  }
+}
+.subscribe__form {
+  margin-top: 1.5em;
 }/*# sourceMappingURL=main.css.map */
