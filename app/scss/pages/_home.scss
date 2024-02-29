@@ -97,11 +97,17 @@
         position: absolute;
         content: "";
         bottom: 30px;
+        @include for-mobile{
+            bottom: 45px;
+        }
     }
     &__motorist--right{
         position: absolute;
         content: "";
         top: 42px;
+        @include for-mobile{
+            top: 50px;
+        }
     }
     &__line{
         width: min(500px, 100%);

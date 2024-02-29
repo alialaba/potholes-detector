@@ -1,0 +1,35 @@
+.hero__motorist{
+   
+    position: relative;
+    overflow: hidden;
+   
+   
+}
+.cars__slider{
+        white-space: nowrap;
+        display: flex;
+       &--left{
+        @include keyframes(moving-cars){
+            from{
+                transform: translateX(-100%);
+            }
+            to{
+                transform: translateX(0);
+            }
+        }
+        @include animation('moving-cars 15s infinite linear');
+       }
+
+       &--right{
+        @include keyframes(moving-cars-right){
+            from{
+                transform: translateX(0);
+            }
+            to{
+                transform: translateX(-100%);
+            }
+        }
+        @include animation('moving-cars-right 15s infinite linear');
+       }
+
+}

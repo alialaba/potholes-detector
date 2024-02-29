@@ -1,3 +1,49 @@
+.blog{
+    &__content{
+        position: relative;
+        text-align: center;
+        width: min(500px, 90%);
+        margin: 0 auto;
+        // background: linear-gradient(to right, rgba(255, 255, 255, 0.5), #7E15D0);
+       
+        
+    }
+    &__title{
+       
+        font-family: $font-Bubblegum;
+        font-size: 2.2rem;
+        @include for-tablet{
+          font-size: 1.8rem;
+        }
+    }
+    &__text{
+        font-family: $font-hind;
+    }
+    &__recent{
+        margin-top: 2em;
+    }
+    &__row{
+        margin-top: 3em;
+        display: flex;
+        justify-content: space-between;
+        gap: 2em;
+    }
+    &__column{
+
+        > * + * {
+            margin-top: 1em;
+        }
+    }
+    &__tag{
+        background-color: $white;
+        border-radius: 30px;
+        font-family: $font-hind;
+        padding: .35em .9em;
+        font-size: .75rem;
+        display: inline-block;
+    }
+
+}
 .subscribe{
     &__title{       
         font-family: $font-Bubblegum;
