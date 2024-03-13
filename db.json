@@ -1,7 +1,26 @@
 {
     "blogs": [
-      { "id": "1", "title": "a title", "views": 100 },
-      { "id": "2", "title": "another title", "views": 200 }
+      {
+        "id": "1",
+        "title": "Keep a safe distance",
+        "content": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum soluta consequatur, magni distinctio reiciendis ratione vel obcaecati vero ullam saepe?",
+        "author": "Ali Ibrahim",
+        "read_time": "2 mins"
+      },
+      {
+        "id": "2",
+        "title": "Let's go there",
+        "content": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum soluta consequatur, magni distinctio reiciendis ratione vel obcaecati vero ullam saepe?",
+        "author": "Ali Ibrahim",
+        "read_time": "3 mins"
+      },
+      {
+        "id": "3",
+        "title": "Let's go there",
+        "content": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum soluta consequatur, magni distinctio reiciendis ratione vel obcaecati vero ullam saepe?",
+        "author": "Ali Ibrahim",
+        "read_time": "3 mins"
+      }
     ],
     "comments": [
       { "id": "1", "text": "a comment about post 1", "postId": "1" },
