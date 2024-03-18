@@ -1657,6 +1657,9 @@ input[type=range]:focus {
 .blog__text {
   font-family: "Hind Siliguri", sans-serif;
 }
+.blog__featured {
+  margin-top: 2em;
+}
 .blog__recent {
   margin-top: 2em;
 }
@@ -1689,4 +1692,26 @@ input[type=range]:focus {
 }
 .subscribe__form {
   margin-top: 1.5em;
+}
+
+.b-container {
+  width: min(600px, 90%);
+  margin: 0 auto;
+}
+
+.post > * + * {
+  margin-top: 2em;
+}
+.post__title {
+  font-family: "Bubblegum Sans", cursive;
+  font-size: 2rem;
+}
+.post__list {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 0.5em 0;
+}
+.post__content {
+  font-family: "Hind Siliguri", sans-serif;
+  font-size: 1.1rem;
 }/*# sourceMappingURL=main.css.map */

@@ -2,24 +2,45 @@
     "blogs": [
       {
         "id": "1",
-        "title": "Keep a safe distance",
-        "content": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum soluta consequatur, magni distinctio reiciendis ratione vel obcaecati vero ullam saepe?",
+        "title": "The Pothole Plague: Unmasking the Culprits",
+        "content": "Potholes are the result of a combination of factors such as weather, traffic, and road maintenance. Heavy rain and freezing temperatures can weaken road surfaces, while constant traffic wears down the asphalt.",
         "author": "Ali Ibrahim",
-        "read_time": "2 mins"
+        "read_time": "2 mins",
+        "img_url" : "https://i.ibb.co/1XFvd2T/Rectangle-340.png"
       },
       {
         "id": "2",
-        "title": "Let's go there",
-        "content": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum soluta consequatur, magni distinctio reiciendis ratione vel obcaecati vero ullam saepe?",
+        "title": "Keep a safe distance ",
+        "content": "Maintain a reasonable distance from the vehicle in front of you. This will give you ample time to spot and react to potholes.",
         "author": "Ali Ibrahim",
-        "read_time": "3 mins"
+        "read_time": "3 mins",
+        "img_url": "https://i.ibb.co/1sz1hGW/Rectangle-341.png"
       },
       {
         "id": "3",
-        "title": "Let's go there",
-        "content": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum soluta consequatur, magni distinctio reiciendis ratione vel obcaecati vero ullam saepe?",
+        "title": "Reporting and Repairing Potholes",
+        "content": "Reduce your speed when driving over uneven or damaged road surfaces. This will minimize the impact on your vehicle.",
         "author": "Ali Ibrahim",
-        "read_time": "3 mins"
+        "read_time": "3 mins",
+        "img_url": "https://i.ibb.co/H2cCscK/Rectangle-341-1.png"
+      },
+      {
+        "id": "4",
+        "title": "Choose the Right Lane",
+        "content": "In multi-lane roads, opt for the middle lanes where possible. The outer lanes are usually more susceptible to potholes.",
+        "author": "Ali Ibrahim",
+        "read_time": "3 mins",
+        "img_url": "https://i.ibb.co/Tk1p6ww/Rectangle-342.png"
+
+      },
+      {
+        "id": "5",
+        "title": "Navigating the Bumpy Roads",
+        "content": "Impact from potholes can knock your wheels out of alignment, resulting in uneven tire wear and decreased fuel efficiency.",
+        "author": "Ali Ibrahim",
+        "read_time": "2 mins",
+        "img_url": "https://i.ibb.co/nfzLQpB/Rectangle-342-2.png"
+
       }
     ],
     "comments": [
@@ -30,3 +51,5 @@
       "name": "typicode"
     }
   }
+  
+  

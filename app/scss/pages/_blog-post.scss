@@ -1,0 +1,24 @@
+.b-container{
+    width: min(600px, 90%);
+    margin: 0 auto;
+}
+
+.post{
+
+    & > * + * {
+        margin-top: 2em;
+    }
+    &__title{
+        font-family: $font-Bubblegum;
+        font-size: 2rem;
+    }
+    &__list{
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        padding: .5em 0;
+    }
+    &__content{
+        font-family: $font-hind;
+        font-size: 1.1rem;
+    }
+}

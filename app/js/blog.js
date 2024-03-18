@@ -47,14 +47,14 @@ const displayBlog = (blog, isFeatured)=>{
 
     blogEl.innerHTML = `
     
-    <img src="/images/blog-img1.svg" alt="blog__img"/>
+    <img src=${blog.img_url} alt=${blog.img_url}/>
                 <h3 class="blog__heading">${blog.title}</h3>
                 <p class="blog__post-content">${blog.content}</p>
                <div class="blog__tags">
                 <span class="blog__tag blog__tag-author ">${blog.author}</span>
                 <span class="blog__tag blog__tag-read-time">${blog.read_time}</span>
                </div>
-               <button class="btn btn-bg">Read more</button>
+               <a class="btn btn-bg" href="blogPost.html?id=${blog.id}">Read more</a>
     `
 
     //Append child element
