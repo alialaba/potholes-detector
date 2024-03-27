@@ -1,20 +1,18 @@
 const post = document.querySelector(".post");
 
-
 const url = "http://localhost:3000/blogs/";
 
 //Get Blog detail
-const getBlogData = async ()=>{
-    //query string of the current URL
-   const query = new URLSearchParams(window.location.search);
-   const param = Object.fromEntries(query.entries());
+const getBlogData = async () => {
+  //query string of the current URL
+  const query = new URLSearchParams(window.location.search);
+  const param = Object.fromEntries(query.entries());
 
-   const res = await fetch(url + param.id);
-   const data = await res.json();
+  const res = await fetch(url + param.id);
+  const data = await res.json();
 
-   //insert elements to parent
-   post.innerHTML = 
-   `
+  //insert elements to parent
+  post.innerHTML = `
    <h2 class="post__title">${data.title}</h2>
    <header class="post__list">
    <div>
@@ -30,10 +28,9 @@ const getBlogData = async ()=>{
    
      <p class="post__content">${data.content}</p>
 
-   
-   `
-
-}
+   <a href="/blog.html">back</a>
+   `;
+};
 
 getBlogData();
 

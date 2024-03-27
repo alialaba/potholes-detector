@@ -21,18 +21,29 @@
     }
     &__featured{
         margin-top: 2em;
+        width: min(800px, 90%);
     }
     &__recent{
         margin-top: 2em;
     }
+    
+    &__ft--col{
+        display: flex;
+    }
+    &__ft--inner{
+        // width: auto;
+        // background-color: aqua;
+    }
     &__row{
         margin-top: 3em;
         display: flex;
-        justify-content: space-between;
+        flex-wrap: wrap;
         gap: 2em;
     }
     &__column{
-
+        flex-grow: 1;
+        flex-basis: 45%;
+        margin-bottom: 3em;
         > * + * {
             margin-top: 1em;
         }
@@ -44,6 +55,15 @@
         padding: .35em .9em;
         font-size: .75rem;
         display: inline-block;
+        margin-bottom: 2em;
+    }
+    &__heading{
+        font-size: 1.4rem;
+        font-family: $font-hind;
+    }
+    &__post-content{
+
+        font-size: 1.1rem;
     }
 
 }

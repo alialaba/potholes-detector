@@ -16,6 +16,15 @@
     background-color: $brown-clr;
     color:$white;
 }
+
+.btn-lg{
+    @extend .btn;
+    background-color: $brown-clr;
+    color:$white;
+    width: 100%;
+    border-radius: 6px
+}
+
 .btn-transparent{
     @extend .btn;
     border: 3px solid $brown-clr;

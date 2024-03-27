@@ -196,7 +196,7 @@ input[type=range]:focus {
   font-size: 1.1rem;
 }
 
-.btn, .btn-pricing, .btn-help, .btn-transparent, .btn-bg {
+.btn, .btn-pricing, .btn-help, .btn-transparent, .btn-lg, .btn-bg {
   border: none;
   border-radius: 80px;
   padding: 12px 25px;
@@ -211,6 +211,13 @@ input[type=range]:focus {
 .btn-bg {
   background-color: #110F0F;
   color: #fff;
+}
+
+.btn-lg {
+  background-color: #110F0F;
+  color: #fff;
+  width: 100%;
+  border-radius: 6px;
 }
 
 .btn-transparent {
@@ -1659,15 +1666,24 @@ input[type=range]:focus {
 }
 .blog__featured {
   margin-top: 2em;
+  width: min(800px, 90%);
 }
 .blog__recent {
   margin-top: 2em;
 }
+.blog__ft--col {
+  display: flex;
+}
 .blog__row {
   margin-top: 3em;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   gap: 2em;
+}
+.blog__column {
+  flex-grow: 1;
+  flex-basis: 45%;
+  margin-bottom: 3em;
 }
 .blog__column > * + * {
   margin-top: 1em;
@@ -1679,6 +1695,14 @@ input[type=range]:focus {
   padding: 0.35em 0.9em;
   font-size: 0.75rem;
   display: inline-block;
+  margin-bottom: 2em;
+}
+.blog__heading {
+  font-size: 1.4rem;
+  font-family: "Hind Siliguri", sans-serif;
+}
+.blog__post-content {
+  font-size: 1.1rem;
 }
 
 .subscribe__title {
@@ -1713,5 +1737,31 @@ input[type=range]:focus {
 }
 .post__content {
   font-family: "Hind Siliguri", sans-serif;
+  font-size: 1.1rem;
+}
+
+.signup {
+  width: min(400px, 90%);
+  margin: 0 auto;
+  font-family: "Hind Siliguri", sans-serif;
+}
+.signup__title {
+  text-align: center;
+  font-size: 2rem;
+  margin: 2rem 0;
+}
+.signup__field input {
+  display: inline-block;
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: 1px solid #110F0F;
+  border-radius: 6px;
+  background: none;
+}
+.signup__field input:focus {
+  outline: none;
+}
+.signup__field label {
   font-size: 1.1rem;
 }/*# sourceMappingURL=main.css.map */

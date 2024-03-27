@@ -1,0 +1,32 @@
+
+    .signup{
+      width: min(400px, 90%);
+      margin: 0 auto;
+      font-family: $font-hind;
+      &__title{
+        text-align: center;
+        font-size: 2rem;
+        margin: 2rem 0;
+      }
+      &__field input{
+        display: inline-block;
+        width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: 1px solid $brown-clr;
+    border-radius: 6px;
+     background: none; 
+        
+     &:focus{
+        outline: none;
+      }
+      }
+      &__field label{
+        font-size: 1.1rem;
+      }
+      
+      
+  
+  
+    }
+     
