@@ -1741,6 +1741,31 @@ input[type=range]:focus {
 }
 
 .signup {
+  display: flex;
+  flex-wrap: wrap;
+}
+.signup__layout {
+  background-color: #110F0F;
+  height: 100vh;
+  padding: 4em 3em 3em 3em;
+  width: 36%;
+  color: #fff;
+}
+@media (max-width: 944px) {
+  .signup__layout {
+    display: none;
+  }
+}
+.signup__layout > * + * {
+  margin-top: 1.5em;
+}
+.signup__heading {
+  font-family: "Bubblegum Sans", cursive;
+}
+.signup__text {
+  font-family: "Hind Siliguri", sans-serif;
+}
+.signup__form {
   width: min(400px, 90%);
   margin: 0 auto;
   font-family: "Hind Siliguri", sans-serif;

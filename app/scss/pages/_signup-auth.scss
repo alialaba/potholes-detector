@@ -1,8 +1,38 @@
 
     .signup{
-      width: min(400px, 90%);
-      margin: 0 auto;
-      font-family: $font-hind;
+      
+       display: flex;
+       flex-wrap: wrap;
+       &__layout{
+        background-color: $brown-clr;
+        height: 100vh;
+        padding: 4em 3em 3em 3em;
+        width: 36%;
+        color: $white;  
+        
+        @include for-tablet{
+          display: none;
+        }
+        & > * + * {
+          margin-top: 1.5em;
+         }
+       }
+
+       &__heading{
+        font-family: $font-Bubblegum;
+       
+       }
+       &__text{
+        font-family: $font-hind;
+       }
+
+
+      &__form{
+        width: min(400px, 90%);
+        margin: 0 auto;
+        font-family: $font-hind;
+
+      }
       &__title{
         text-align: center;
         font-size: 2rem;
