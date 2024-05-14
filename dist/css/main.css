@@ -1653,6 +1653,7 @@ input[type=range]:focus {
   text-align: center;
   width: min(500px, 90%);
   margin: 0 auto;
+  padding: 0 0 100px 0;
 }
 .blog__title {
   font-family: "Bubblegum Sans", cursive;
@@ -1668,13 +1669,20 @@ input[type=range]:focus {
 }
 .blog__featured {
   margin-top: 2em;
-  width: min(800px, 90%);
 }
 .blog__recent {
   margin-top: 2em;
 }
 .blog__ft--col {
   display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  align-items: center;
+  justify-content: center;
+}
+.blog__ft--inner {
+  flex-grow: 1;
+  flex-basis: 500px;
 }
 .blog__row {
   margin-top: 3em;

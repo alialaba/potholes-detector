@@ -4,6 +4,7 @@
         text-align: center;
         width: min(500px, 90%);
         margin: 0 auto;
+        padding: 0 0 100px 0;
         // background: linear-gradient(to right, rgba(255, 255, 255, 0.5), #7E15D0);
        
         
@@ -21,7 +22,7 @@
     }
     &__featured{
         margin-top: 2em;
-        width: min(800px, 90%);
+        // width: min(800px, 90%);
     }
     &__recent{
         margin-top: 2em;
@@ -29,10 +30,18 @@
     
     &__ft--col{
         display: flex;
+        flex-wrap: wrap;
+        gap: 2em;
+        // background-color: red;
+        // width: 100%;
+       align-items: center;
+       justify-content: center;
     }
     &__ft--inner{
         // width: auto;
         // background-color: aqua;
+        flex-grow: 1;
+        flex-basis: 500px;
     }
     &__row{
         margin-top: 3em;

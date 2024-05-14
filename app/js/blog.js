@@ -38,10 +38,9 @@ const displayBlog = (blog, isFeatured) => {
   recentBlogEl.classList.add("blog__column");
 
   ftBlogEl.innerHTML = `
-    <div>
+    <div class="blog__ft--inner">
     <img src=${blog.img_url} alt=${blog.img_url}/>
     </div>
-    
      <div class="blog__ft--inner">
                 <h3 class="blog__heading">${blog.title}</h3>
                 <p class="blog__post-content">${blog.content}</p>
