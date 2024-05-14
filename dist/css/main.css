@@ -329,9 +329,11 @@ input[type=range]:focus {
 
 .input-email {
   border-radius: 50px;
+  border: none;
   line-height: 1.9;
   font-family: "Hind Siliguri", sans-serif;
   font-size: 0.9rem;
+  flex: 1;
 }
 
 .twitter-user {
@@ -1705,6 +1707,10 @@ input[type=range]:focus {
   font-size: 1.1rem;
 }
 
+.subscribe {
+  width: min(100%, 450px);
+  margin: 0 auto;
+}
 .subscribe__title {
   font-family: "Bubblegum Sans", cursive;
   font-size: 2.2rem;
@@ -1716,6 +1722,12 @@ input[type=range]:focus {
 }
 .subscribe__form {
   margin-top: 1.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  border-radius: 50px;
+  border: 2px solid #110F0F;
 }
 
 .b-container {

@@ -23,17 +23,20 @@
 
       <div class="signup__field">
         <label for="username">Username:</label>
-        <input type="text" id="username"  />
+        <input type="text" id="username" class="error-input" />
+        <span id="error-msg" ></span>
       </div>
 
       <div class="signup__field">
-        <label for="password">Password:</label>
+        <label for="password" >Password:</label>
         <input type="password" id="password"  />
+        <span id="username-error-msg" ></span>
       </div>
 
       <div class="signup__field">
         <label for="confirm-password">Confirm Password:</label>
         <input type="password" id="confirm-password"  />
+        <span id="error-msg" ></span>
       </div>
       
       <button class="btn btn-lg" type="submit">Sign Up</button>

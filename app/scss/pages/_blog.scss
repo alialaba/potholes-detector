@@ -68,6 +68,8 @@
 
 }
 .subscribe{
+       width: min(100%, 450px);
+       margin: 0 auto;
     &__title{       
         font-family: $font-Bubblegum;
         font-size: 2.2rem;
@@ -77,6 +79,13 @@
     }
     &__form{
         margin-top: 1.5em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 20px;
+        // background: #edeefe;
+        border-radius: 50px;
+        border: 2px solid $brown-clr;
     }
 
 }

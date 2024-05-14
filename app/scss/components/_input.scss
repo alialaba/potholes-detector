@@ -1,14 +1,18 @@
 .input{
     outline: none;
+
     padding: .5em 1em;
     background: none;
+
 
 }
 
 .input-email{
     @extend .input;
     border-radius: 50px;
+    border: none;
     line-height: 1.9;
     font-family: $font-hind;
     font-size: .9rem;
+    flex: 1;
 }
