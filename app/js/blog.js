@@ -30,6 +30,7 @@ const showBlog = (blogsData) => {
 };
 
 const displayBlog = (blog, isFeatured) => {
+  
   //Create element for blog
   const ftBlogEl = document.createElement("div");
   const recentBlogEl = document.createElement("div");
